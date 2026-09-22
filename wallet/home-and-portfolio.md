@@ -20,7 +20,7 @@ The Home tab is your overview. It refreshes every 30 seconds and on pull-to-refr
 
 | Button | Opens |
 | --- | --- |
-| **Bridge** | Cross-chain bridge (coming soon; see [Bridge](bridge.md)) |
+| **Bridge** | Cross-chain bridge to and from Monad (see [Bridge](bridge.md)) |
 | **Deposit** | Your Receive sheet (QR + address) |
 | **Withdraw** | The Send sheet |
 | **Transfer** | Spot ↔ Perps collateral transfer |

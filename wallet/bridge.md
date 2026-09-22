@@ -1,8 +1,4 @@
-# Bridge (Coming Soon)
-
-{% hint style="info" %}
-The Bridge is built into the app and will be switched on in an upcoming build. Until then the Bridge screen reads *"Cross-chain bridging isn't configured in this build yet."* Everything below describes how it works once enabled.
-{% endhint %}
+# Bridge
 
 DyorHQ's bridge is powered by **Aurora Intents** (NEAR Intents). You send on one chain, Aurora settles across chains, and the funds arrive in your DyorHQ wallet on Monad, or the other way round.
 
@@ -35,4 +31,4 @@ Completed bridges appear in Portfolio under **Bridge** and post a "Bridge comple
 
 ## Fees
 
-Aurora's quote includes its own fees. DyorHQ may add an integrator fee of 0.1% once the bridge is live. Everything is shown in the **Total fee** row before you confirm.
+Aurora's quote includes its protocol fee, withdrawal fee and spread, plus DyorHQ's 0.1% integrator fee. Everything is shown in the **Total fee** row (one dollar amount and percentage) before you confirm.
