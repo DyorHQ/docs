@@ -1,0 +1,44 @@
+# Self-Custody & Security
+
+DyorHQ is non-custodial end to end. This page explains what that means in practice and the protections built into the app.
+
+## What DyorHQ never does
+
+* **Never holds your keys.** Your wallet is created on your iPhone (Email & Password) or imported into it. The key is stored in the iPhone Keychain, marked "this device only" so it is never synced to iCloud.
+* **Never holds your funds.** Every product routes through public contracts on Monad (venues' own routers, Perpl's exchange, the DyorHQ Launchpad and Moments contracts). DyorHQ has no deposit address and no pooled balances.
+* **Never signs for you.** Every transaction is signed on your device after you tap the confirm button, and only for exactly what the confirmation sheet showed.
+* **Never asks for your key.** Support will never ask for a recovery phrase, password or private key. Anyone who does is not DyorHQ.
+
+## What you are responsible for
+
+* **Your password** (Email & Password wallets). It is the wallet. There is no reset that keeps your funds.
+* **Your recovery phrase or private key** (imported wallets). DyorHQ can show you an imported wallet's key again (behind Face ID), but if you delete the app or sign out, only your own backup brings the wallet back.
+* **Your MON balance for gas.**
+
+## Protections built in
+
+| Protection | What it does |
+| --- | --- |
+| **Confirmation sheet before signing** | Every wallet transaction (swaps, sends, curve trades, launches, collects, claims, on-chain perp orders) opens a sheet that shows every detail, simulates the transaction so a revert surfaces before you sign, and skips approvals you've already granted. Two exceptions: the bridge signs straight from its own screen, and orders sent through One-Click Trading are signed by your Perpl trading key instead of your wallet. |
+| **Require Face ID (App Lock)** | Optional. Profile → Security → **Require Face ID**. Adds a biometric prompt ("Confirm Swap", "Confirm Send", "Confirm bridge"…) before the wallet signs. Off by default. It does not gate orders forwarded through One-Click Trading or the one-time "Enable one-click trading" transaction. |
+| **Privacy cover** | The instant the app leaves the foreground, an opaque cover hides the screen so the iOS app-switcher snapshot can never capture a phrase, key or balance. |
+| **Secret fields are privacy-sensitive** | Phrase and key fields are hidden by default (Reveal/Hide) and re-hidden whenever you leave the app. |
+| **Clipboard hygiene** | An exported private key expires from the clipboard after 90 seconds. After importing, the app clears the clipboard if it still holds your secret. |
+| **Keychain, device-only** | Imported and Email & Password keys use the strictest Keychain class: available only when the phone is unlocked, never synced. |
+| **Economics locked at launch** | Launchpad launches carry a hash of the terms you saw. If the owner changed a fee between you reading and your transaction landing, the launch reverts. |
+| **Immutable contracts** | No proxies. Locked liquidity has no withdrawal function. Nothing about a live Moment can be changed by anyone, including DyorHQ. |
+
+## What DyorHQ can and cannot do to live contracts
+
+The Launchpad and Moments contracts are owner-operated but deliberately limited:
+
+* The owner **can** set fees and policy for **future** launches and Moments (Moments policy changes carry a 48-hour timelock), pause Moments publishing, and propose a fee-recipient change on an abandoned launch with a 3-day timelock.
+* The owner **cannot** withdraw locked liquidity, touch curve reserves, change a live launch's fees, mint tokens, pause trading, or change anything about a Moment after it's published.
+
+## Contract status
+
+* **Launchpad**: internal security audit (September 2026) with proof-of-concept tests, fixes deployed, live on Monad mainnet. All contracts are source-verified.
+* **Moments**: clean-room contracts with an internal security review, invariant and fuzz suites and fork rehearsals. Exposure is bounded by design (the graduation threshold is small).
+* No independent audit has been completed yet; one is planned after the Moments validation launch.
+
+See [Risk Disclosures](../resources/risk-disclosures.md) and [Contracts & Addresses](../resources/contracts-and-addresses.md).
