@@ -19,7 +19,7 @@ One account, four products:
 | 🔥 **Launch** | Fair-launch a memecoin on a bonding curve, paired with MON, USDC, AUSD or a tokenized T-bill stock (aBIL). Liquidity is locked forever at graduation. | DyorHQ Launchpad contracts |
 | 📸 **Moments** | Publish a photo or video as an NFT on Monad. People collect it for USDC. If enough is collected, it graduates into a tradable coin with a locked liquidity pool. | DyorHQ Moments contracts |
 
-Plus everything a wallet needs: a Home overview, a Portfolio with volume, fees and P&L across every product, send and receive, notifications and price alerts, and a crypto news feed.
+Plus everything a wallet needs: a Home overview, a Portfolio with volume, fees and P&L across every product, send and receive, a cross-chain bridge into Monad, notifications and price alerts, and a crypto news feed.
 
 ## The DyorHQ edge
 

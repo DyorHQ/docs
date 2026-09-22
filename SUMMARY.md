@@ -51,7 +51,7 @@
 
 * [Home & Portfolio](wallet/home-and-portfolio.md)
 * [Send, Receive & Transfer](wallet/send-receive-transfer.md)
-* [Bridge (Coming Soon)](wallet/bridge.md)
+* [Bridge](wallet/bridge.md)
 * [Notifications & Price Alerts](wallet/notifications-and-price-alerts.md)
 * [Profile & Settings](wallet/profile-and-settings.md)
 * [DyorHQ Social](wallet/dyorhq-social.md)
