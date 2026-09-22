@@ -29,7 +29,7 @@ Send **only Monad-network assets** to this address. Sending from another chain w
 
 * **From an exchange:** withdraw MON (or USDC) to your DyorHQ address on the Monad network, if your exchange supports Monad withdrawals.
 * **From another wallet on Monad:** send to your address as usual.
-* **From another chain:** use a bridge to Monad. DyorHQ's built-in **Bridge** (Home → Bridge, powered by Aurora Intents) is built and will be switched on in an upcoming build; see [Bridge](../wallet/bridge.md). Until then, use any third-party bridge that supports Monad.
+* **From another chain:** tap **Bridge** on Home. DyorHQ's built-in bridge (powered by Aurora Intents) moves USDC and other assets from Ethereum, Base, Arbitrum, Optimism, Polygon, BNB Chain, Avalanche, Gnosis, Scroll or Berachain straight into your Monad wallet. See [Bridge](../wallet/bridge.md).
 
 ## Check your balance
 
