@@ -46,7 +46,7 @@ DyorHQ is a self-custodial interface to public, permissionless protocols on Mona
 * **No KYC, no geofence.** DyorHQ Moments is a permissionless protocol. Whether you may use it, and how gains are taxed, depends on your jurisdiction. It's on you to check.
 * **Marketplaces are third parties.** OpenSea can delist collections and doesn't guarantee royalties.
 
-## Bridge (when enabled)
+## Bridge
 
 Cross-chain transfers are settled by Aurora Intents and can be delayed or refunded. Never bridge more than you can wait for.
 

@@ -45,7 +45,6 @@ The footer reminds you: *"Self-custodial: support can never reach your keys or f
 | --- | --- |
 | Sign in with Apple / Google | Built, switched off until launch infrastructure is live |
 | Passkeys (Face ID sign-in, no password) | Built, switched off until the passkey domain is live |
-| Bridge (Aurora Intents) | Built, switched on in an upcoming build |
 | Key export for Email & Password wallets | Needs the secure export page; coming |
 | Background push notifications | Not yet; alerts fire while the app is open |
 | More languages | Coming; the app follows your device language today (English) |
