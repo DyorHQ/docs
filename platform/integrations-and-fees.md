@@ -14,7 +14,7 @@ DyorHQ is an interface to public protocols on Monad. This page lists every integ
 | Moments graduation | **Uniswap v4** | coin/USDC pool, locked forever |
 | Moments NFTs | **OpenSea** | Every Moment edition renders and is tradable on OpenSea (Monad) |
 | Moments media | **IPFS (Pinata)** | Media is pinned to IPFS and the `ipfs://` link is written on-chain |
-| Bridging (coming soon) | **Aurora Intents** | Cross-chain deposits to and from Monad |
+| Bridging | **Aurora Intents** | Cross-chain deposits to and from Monad |
 | Charts | **TradingView Lightweight Charts** | Perps candles, bundled offline |
 | News | CoinDesk, Cointelegraph, Decrypt, The Defiant, The Block | Public RSS feeds |
 | Explorer | **Monadscan** | Every "View" link |
@@ -61,9 +61,15 @@ DyorHQ is an interface to public protocols on Monad. This page lists every integ
 | NFT royalty | **5%** (ERC-2981), when marketplaces honour it | Creator |
 | Expiry (window closes before graduation) | Reserve is split **70%** creator / **30%** DyorHQ treasury | — |
 
-### Bridge (coming soon)
+### Bridge
 
-Aurora's quote includes its protocol fee, withdrawal fee and spread. DyorHQ may add an integrator fee of 0.1% once the bridge is enabled. The **Total fee** row on the bridge screen shows everything as one dollar amount and percentage before you confirm.
+| Fee | Amount |
+| --- | --- |
+| Aurora protocol fee, withdrawal fee and spread | Included in Aurora's quote |
+| DyorHQ integrator fee | **0.1%** |
+| Gas | On the source chain, in that chain's native token |
+
+The **Total fee** row on the bridge screen shows everything as one dollar amount and percentage before you confirm.
 
 ### Gas
 
