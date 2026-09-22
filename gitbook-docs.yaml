@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: DyorHQ Docs
+  structure:
+    - type: space
+      key: dyorhq-docs
+      title: DyorHQ Docs
+      path: docs
+      default: true
+      content:
+        directory: ./
