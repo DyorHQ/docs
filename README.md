@@ -2,7 +2,7 @@
 
 **The RWA HQ for social trading.** DyorHQ is one self-custodial iPhone app for everything on Monad: swap tokens at the best price, trade perpetuals, launch coins paired with tokenized stocks, and publish real-life moments as NFTs that can graduate into their own coin.
 
-{% file src=".gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_11-59-19.mp4" %}
+<figure><img src=".gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-00-13.png" alt=""><figcaption></figcaption></figure>
 
 ## What DyorHQ is
 
