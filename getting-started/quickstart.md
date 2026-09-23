@@ -10,13 +10,11 @@ This is the fastest path from zero to your first trade on DyorHQ. It takes about
 
 1. Go to [dyorhq.fun](https://dyorhq.fun) and enter your email in the form at the bottom of the page.
 2. Watch your inbox. Your invite email tells you how to install the app on your iPhone.
-3. Open DyorHQ. You'll see the welcome screen with a short tour of the four products and a **Get Started** button.
+3. Open DyorHQ. You'll see the welcome screen with a short tour of the products and a **Get Started** button.
 
 **Requirements:** iPhone running iOS 18 or later.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Welcome screen (DyorHQ wordmark, rotating feature cards, "Get Started" button). Suggested file: `.gitbook/assets/01-welcome.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-26-47.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Create your account
 
@@ -32,9 +30,7 @@ With Email & Password, **your password is your wallet**. DyorHQ can't reset it o
 
 Full details, password rules and the differences between each method are in [Create Your Account](create-your-account.md).
 
-{% hint style="info" %}
-📸 **Screenshot here:** "Get started" screen showing the Email & Password card, "Import a wallet" and "Watch an address". Suggested file: `.gitbook/assets/02-get-started.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-30-28.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Get your address and fund it
 
@@ -48,10 +44,6 @@ Send funds to that address on **Monad mainnet**. You'll want:
 
 See [Fund Your Wallet](fund-your-wallet.md) for options.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Receive sheet with QR code, address, Copy and Share buttons. Suggested file: `.gitbook/assets/03-receive.png`
-{% endhint %}
-
 ## Step 4: Make your first swap
 
 1. Tap the **Trade** tab. **Swap** is selected by default.
@@ -63,9 +55,7 @@ See [Fund Your Wallet](fund-your-wallet.md) for options.
 
 You'll get a "Swap complete" notification (if notifications are on) and the swap shows up in **Swap History** and in your **Recent Activity**.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Swap screen with a MON → USDC quote list showing the "Best" tag. Suggested file: `.gitbook/assets/04-first-swap.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-37-20.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5: Explore the rest
 

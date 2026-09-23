@@ -2,19 +2,17 @@
 
 DyorHQ has no "account" in the usual sense. What you create is a **wallet on your iPhone**, and the app is built around it. Three ways in are live today.
 
-| Method | Best for | Can sign transactions? | Where the key lives |
-| --- | --- | --- | --- |
-| **Email & Password** | New users | Yes | Recreated from your email + password, then stored in the iPhone Keychain |
-| **Import a wallet** | People with an existing wallet | Yes | Imported into the iPhone Keychain (this device only) |
-| **Watch an address** | Following a wallet without controlling it | No | No key at all |
+| Method               | Best for                                  | Can sign transactions? | Where the key lives                                                      |
+| -------------------- | ----------------------------------------- | ---------------------- | ------------------------------------------------------------------------ |
+| **Email & Password** | New users                                 | Yes                    | Recreated from your email + password, then stored in the iPhone Keychain |
+| **Import a wallet**  | People with an existing wallet            | Yes                    | Imported into the iPhone Keychain (this device only)                     |
+| **Watch an address** | Following a wallet without controlling it | No                     | No key at all                                                            |
 
 {% hint style="info" %}
 **Coming soon:** Sign in with Apple, Continue with Google, and Passkeys (Face ID, no password, no seed phrase). These are built but switched off until the supporting infrastructure is live. They'll appear on the "Get started" screen under "or continue with" when enabled.
 {% endhint %}
 
-{% hint style="info" %}
-📸 **Screenshot here:** "Get started" screen. Suggested file: `.gitbook/assets/02-get-started.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-30-28.png" alt=""><figcaption></figcaption></figure>
 
 ## Email & Password
 
@@ -40,10 +38,6 @@ Your wallet is derived deterministically from your email and password (a very sl
 5. Enter the code on the **Verify your email** screen (it submits automatically on the sixth digit). Use **Send a new code** if it didn't arrive, or **Change details** to go back.
 
 Once verified, your wallet is created and you're signed in. The code proves the email is yours, so nobody can register a wallet against an email they don't own.
-
-{% hint style="info" %}
-📸 **Screenshot here:** Sign Up form with the password strength meter and the acknowledgement toggle. Suggested file: `.gitbook/assets/05-signup.png`
-{% endhint %}
 
 ### Log In
 
@@ -71,10 +65,6 @@ Tap **Import a wallet** (or, when watching an address, Profile → Manage Wallet
 4. Tap **Import Wallet**.
 
 The key is stored only on this iPhone, in the Keychain, and never synced to iCloud or sent anywhere. DyorHQ cannot recover it, so keep your original backup. After import the app clears your clipboard if it still holds the secret.
-
-{% hint style="info" %}
-📸 **Screenshot here:** Import Wallet screen with "Recovery Phrase / Private Key" switch and the "Wallet found" preview. Suggested file: `.gitbook/assets/06-import.png`
-{% endhint %}
 
 ## Watch an address
 
