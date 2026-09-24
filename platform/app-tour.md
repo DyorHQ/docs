@@ -2,18 +2,16 @@
 
 A map of every screen in DyorHQ so you always know where you are.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Home tab with the tab bar visible (Home · Launch · Trade · Moments). Suggested file: `.gitbook/assets/07-tab-bar.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-00-13.png" alt=""><figcaption></figcaption></figure>
 
 ## The tab bar
 
-| Tab | What's there |
-| --- | --- |
-| 🏠 **Home** | Total value, quick actions (Bridge, Deposit, Withdraw, Transfer), allocation donut, Top Tokens, My Holdings. |
-| 🔥 **Launch** | The Launchpad: graduated coins, coins still on the curve, search, **New Launch** and **My Launchpad**. |
-| 🔁 **Trade** | Two modes under one tab, switched at the top: **Swap** (spot) and **Perps** (Perpl). |
-| 📸 **Moments** | The Moments feed (All / Collecting / Graduated), **Publish** and **My Moments**. |
+| Tab            | What's there                                                                                                     |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 🏠 **Home**    | Total value, quick actions (Bridge, Deposit, Withdraw, Transfer), Portfolio allocation, Top Tokens, My Holdings. |
+| 🔥 **Launch**  | The Launchpad: graduated coins, coins still on the curve, search, **New Launch** and **My Launchpad**.           |
+| 🔁 **Trade**   | Two modes under one tab, switched at the top: **Swap** (spot) and **Perps** (Perpl).                             |
+| 📸 **Moments** | The Moments feed (All / Collecting / Graduated), **Publish** and **My Moments**.                                 |
 
 Trade sits between Launch and Moments on purpose: it divides the two "coin" sections.
 
@@ -29,27 +27,25 @@ From left to right:
 
 ## The side menu (☰)
 
-| Item | Subtitle in the app | Opens |
-| --- | --- | --- |
-| Home | Balances and markets | Home tab |
-| Spot | Swap across every Monad venue | Trade tab, Swap mode |
-| Perps | Perpetuals on Perpl | Trade tab, Perps mode |
-| Launch | Launch and trade new coins | Launch tab |
-| Moments | Collect moments, graduate coins | Moments tab |
-| News | Crypto headlines | Full-screen News |
-| Portfolio | Volume, fees and P&L across DyorHQ | Full-screen Portfolio |
-| Get Help | Support and community | Full-screen Support |
+| Item      | Subtitle in the app                 | Opens                 |
+| --------- | ----------------------------------- | --------------------- |
+| Home      | Balances and markets                | Home tab              |
+| Spot      | Swap across every Monad venue       | Trade tab, Swap mode  |
+| Perps     | Perpetuals on Perpl                 | Trade tab, Perps mode |
+| Launch    | Launch and trade new coins          | Launch tab            |
+| Moments   | Collect moments, graduate coins     | Moments tab           |
+| News      | Crypto headlines                    | Full-screen News      |
+| Portfolio | Volume, fees and P\&L across DyorHQ | Full-screen Portfolio |
+| Get Help  | Support and community               | Full-screen Support   |
 
 The profile row at the top opens **Profile**. The footer shows the app version and "Monad mainnet".
 
-{% hint style="info" %}
-📸 **Screenshot here:** Side menu open. Suggested file: `.gitbook/assets/08-side-menu.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-24_10-55-13.png" alt=""><figcaption></figcaption></figure>
 
 ## Screens outside the tabs
 
 * **Profile**: wallet actions (Receive, Send, Recent Activity), every setting, network info, Sign Out and Delete Account. See [Profile & Settings](../wallet/profile-and-settings.md).
-* **Portfolio**: cumulative volume, fees, P&L and trade counts by product and period, holdings (Assets / NFTs) and full activity. See [Home & Portfolio](../wallet/home-and-portfolio.md).
+* **Portfolio**: cumulative volume, fees, P\&L and trade counts by product and period, holdings (Assets / NFTs) and full activity. See [Home & Portfolio](../wallet/home-and-portfolio.md).
 * **News**: headlines from CoinDesk, Cointelegraph, Decrypt, The Defiant and The Block, filterable by source, opened in an in-app browser.
 * **Notifications**: everything the app has told you, grouped by day, filterable by kind.
 * **Get Help**: email support, bug report, X, website and Terms of Use. See [Official Links & Support](../resources/official-links.md).

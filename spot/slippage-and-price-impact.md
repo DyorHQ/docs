@@ -6,23 +6,21 @@ Two different things protect you on a swap. **Slippage tolerance** is your limit
 
 Slippage is how far the price may move between your quote and settlement. If a swap would fill worse than your tolerance allows, it **cancels instead of filling worse**. The **Minimum received** row on every confirmation is your quote minus the tolerance.
 
-**Default: 0.5%.** Tap the slippage button (top right of the Swap screen) to change it.
+**Default: 0.5%.** Tap the slippage button (top right of the Swap screen) to change it
 
-{% hint style="info" %}
-📸 **Screenshot here:** Slippage sheet with the four presets and the Custom field. Suggested file: `.gitbook/assets/11-slippage.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-24_11-14-29.png" alt=""><figcaption></figcaption></figure>
 
-| Preset | The app's hint |
-| --- | --- |
-| 0.1% | Tightest price. Best for stable pairs. |
-| 0.5% | Balanced, recommended for most swaps. |
-| 1% | More forgiving when the market is moving. |
-| 3% | For volatile or low-liquidity pairs. |
-| Custom | Any value above 0 up to 50%. |
+| Preset | The app's hint                            |
+| ------ | ----------------------------------------- |
+| 0.1%   | Tightest price. Best for stable pairs.    |
+| 0.5%   | Balanced, recommended for most swaps.     |
+| 1%     | More forgiving when the market is moving. |
+| 3%     | For volatile or low-liquidity pairs.      |
+| Custom | Any value above 0 up to 50%.              |
 
 Warnings: at 5% or more the sheet says a high tolerance can fill at a much worse price; at 0.1% or less it warns a swap can fail in a fast-moving market.
 
-Once a quote is selected, the line under the quote list reads: *"Minimum received X SYM at Y% slippage. Quotes refresh every 15 seconds."*
+Once a quote is selected, the line under the quote list reads: _"Minimum received X QT at Y% slippage. Quotes refresh every 15 seconds."_
 
 {% hint style="info" %}
 The Swap slippage setting is separate from **Profile → Trading Preferences → Max Slippage**, which is the default for perps market orders (0.1% / 0.5% / 1% / 2%). Both start at 0.5%.

@@ -2,10 +2,6 @@
 
 The Swap picker starts with the curated Monad token list, but any ERC-20 on Monad can be swapped.
 
-{% hint style="info" %}
-📸 **Screenshot here:** "Choose a Token" sheet with a pasted contract address showing under "By address". Suggested file: `.gitbook/assets/12-token-picker.png`
-{% endhint %}
-
 ## The token picker
 
 Tap either token on the Swap screen to open **Choose a Token**. The search field accepts a **symbol, name or address**.
@@ -14,7 +10,7 @@ Tap either token on the Swap screen to open **Choose a Token**. The search field
 * As you type, matches from the Uniswap and Monday venue lists appear under **More Monad tokens**; after two or more characters Kuru's token directory is searched too.
 * Paste a full contract address and the app reads its symbol, name and decimals on-chain and shows it under **By address**. Tap it to use it.
 
-If nothing matches you'll see: *"No token matches. Paste a contract address to add any Monad token."*
+If nothing matches you'll see: _"No token matches. Paste a contract address to add any Monad token."_
 
 ## Tokens remembered for you
 
