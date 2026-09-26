@@ -21,7 +21,7 @@ Any other Monad token works for swapping.
 
 Send **only Monad-network assets** to this address. Sending from another chain without a bridge will not arrive.
 
-<figure><img src="../.gitbook/assets/photo_2026-09-23 12.47.17.jpeg" alt="" width="295"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/receive-sheet-example-redacted.jpg" alt="DyorHQ Receive sheet on a dark background: a placeholder box where your QR code appears, an example address 0x1234…ABCD, the line &#x22;Send MON or any Monad token to this address.&#x22; and Copy and Share buttons" width="295"><figcaption><p>Example only — always use the address shown in your own app.</p></figcaption></figure>
 
 ## Ways to get funds onto Monad
 
