@@ -38,6 +38,10 @@ If you launched a coin with fee sharing **off**, your fees are **paid straight t
 * On the coin's page, **Creator Fees** shows **Your claimable fees** and **Claim Creator Fees** (or "Nothing to claim yet, fees accrue as people trade your coin."). In the normal case this stays at zero because the fees already reached your wallet.
 * One claim sweeps undelivered fees across **all your launches paired in that asset**. In **My Launchpad → Claimable Fees** you'll see one "Creator fees · \<PAIR\>" row per pair asset.
 
+{% hint style="info" %}
+**Coins on the two oldest retired Launchpads** (`0x2F02…` and `0xad3d…`) work differently: their fee escrows book creator fees as a claimable balance instead of paying them out on every trade. Claim them from the "Creator fees · \<PAIR\>" rows marked **Retired launchpad** in My Launchpad → Claimable Fees. See [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md).
+{% endhint %}
+
 ## After graduation on Uniswap v4
 
 The DyorHQ hook collects the 1% pool fee (plus creator tax) on every swap and holds it per pool. A sweep pays DyorHQ 50% of the 1% fee; the other 50% plus the whole creator tax goes to the creator, or, for fee-sharing coins, to the holder-reward pool when the fee is in the pair asset (fees collected in the coin itself go to the creator). The sweep is a public contract call that anyone can trigger; it isn't yet exposed as a button in the app.

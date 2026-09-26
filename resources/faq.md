@@ -86,7 +86,10 @@ When the curve has raised its pair asset's threshold (for example 4,324.56 USDC)
 No. Neither locker can remove liquidity. The Monday vault can only harvest earned swap fees; the Uniswap v4 locker has no withdrawal path at all.
 
 **Where do I claim fees or rewards?**
-Holder rewards: on the coin's page (Your Holdings) or in My Launchpad → Claimable Fees, where **Claim All** runs every claim. Creator fees are paid to your wallet automatically on every trade; a claim is only needed if a payment couldn't be delivered.
+Holder rewards: on the coin's page (Your Holdings) or in My Launchpad → Claimable Fees, where **Claim All** runs every claim. Creator fees are paid to your wallet automatically on every trade; a claim is only needed if a payment couldn't be delivered, or for coins on the two oldest retired Launchpads, whose fees are booked for you to claim (rows marked **Retired launchpad**).
+
+**My coin shows "Retired launchpad". Is something wrong?**
+No. It was launched on an earlier Launchpad that DyorHQ retired on 2026-09-23. It keeps trading and keeps the graduation threshold it launched with; only new launches go to the current Launchpad. See [Past Cohorts & Retired Launchpads](past-cohorts-and-retired-launchpads.md).
 
 ## Moments
 
@@ -108,8 +111,8 @@ Your collect would push the reserve to the threshold. It's clamped to exactly wh
 **Why is the trading fee 1.5%?**
 0.5% pool fee (which deepens the locked position) plus 1% hook fee split 0.2% creator / 0.3% DyorHQ / 0.5% buyback-and-LP.
 
-**Why can't I see the very first Moments any more?**
-The first three Moments were published on a validation stack with a $10 threshold. That stack is retired and paused; those Moments stay on-chain but aren't shown in the app.
+**Where did the earlier Moments go?**
+On 2026-09-23 DyorHQ moved Moments to a new cohort (cohort 3). The five Moments of cohorts 1 and 2 are on retired contracts where publishing is paused. They stay on-chain, and if you hold an edition or coins in one, or created one, it's listed under **Past Cohorts** in My Moments and Portfolio. Those pages are claim-only: claim vested coins and, as the creator, withdraw your own proceeds and pool fees. They aren't part of **Claim All**, and past-cohort coins can't be traded in the app. See [Past Cohorts & Retired Launchpads](past-cohorts-and-retired-launchpads.md).
 
 ## Notifications
 

@@ -9,6 +9,7 @@ DyorHQ is a self-custodial interface to public, permissionless protocols on Mona
 * **Early access.** The app is in early access. Expect rough edges, and never put in more than you can afford to lose.
 * **Third-party protocols.** Swaps, perps and bridging run on contracts DyorHQ does not control (Uniswap, Monday Trade, Kuru, Perpl, Aurora). Their availability, fees and behaviour can change.
 * **Smart contract risk.** Contracts can have bugs. Both the Launchpad and the Moments contracts have had internal security reviews with proof-of-concept, fuzz, invariant and fork testing, and the Launchpad was redeployed with its fixes. No independent audit has been completed yet; one is planned after the Moments validation launch.
+* **Retired contracts.** On 2026-09-23 DyorHQ deployed a new Launchpad and Moments cohort 3, and retired the earlier Launchpads and Moments cohorts 1 and 2. Retired contracts stay on-chain. Coins launched there keep trading; Moments on cohorts 1 and 2 keep paying their fee shares to DyorHQ's retired wallets and are claim-only in the app, although their collect contracts still accept collects from outside it. Don't start new activity on retired contracts: check [Contracts & Addresses](contracts-and-addresses.md) and [Past Cohorts & Retired Launchpads](past-cohorts-and-retired-launchpads.md).
 * **Monad network risk.** RPC outages, reorgs and congestion can delay or fail transactions. Gas is charged on the limit, not usage.
 * **Tax.** Selling, swapping or earning tokens may be taxable where you live.
 

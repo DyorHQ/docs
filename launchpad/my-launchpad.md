@@ -20,7 +20,7 @@ Your avatar and name (from DyorHQ Social if set), your address, and three stats:
 
 Everything you can claim right now:
 
-* **Creator fees · \<PAIR\>**: one row per pair asset, for coins you launched with fee sharing off (only fees that couldn't be paid straight to your wallet; normally zero)
+* **Creator fees · \<PAIR\>**: one row per pair asset and Launchpad, for coins you launched with fee sharing off (only fees that couldn't be paid straight to your wallet; normally zero). Rows captioned **Retired launchpad** hold fees from coins on an earlier Launchpad; on the two oldest ones fees are always booked here to claim. See [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md).
 * **TICKER rewards**: one row per fee-sharing coin you hold
 * **Claim** on each row, or **Claim All** (shown when there's more than one thing to claim) to run every claim in one confirmation flow, one transaction per claim
 

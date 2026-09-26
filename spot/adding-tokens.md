@@ -19,7 +19,7 @@ Any token you pick, launch, buy on the Launchpad, swap into or hold shows up in 
 ## Coins from the Launchpad and Moments
 
 * **Graduated Launchpad coins** trade through the pool their curve migrated into (Uniswap v4 or Monday Trade). The **Swap SYM on …** button on the coin's page opens Swap with the pair preselected.
-* **Graduated Moment coins** trade on Uniswap v4 against USDC at a 1.5% all-in fee. The **Trade $SYM** button on the Moment page opens Swap with USDC → coin.
+* **Graduated Moment coins** trade on Uniswap v4 against USDC at a 1.5% all-in fee. The **Trade $SYM** button on the Moment page opens Swap with USDC → coin. Coins of Moments from past cohorts are the exception: the app shows them as **Past cohort · trading closed** and doesn't offer a swap (see [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md)).
 * Coins **still on their curve** are bought and sold on the Launch tab, not in Swap.
 
 ## A word of caution

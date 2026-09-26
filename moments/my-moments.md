@@ -17,13 +17,19 @@ Everything you've collected or published, with your coins by vesting stage.
 | **Still vesting** | Unlocks at the monthly cliffs. |
 | **Claimed** | Already in your wallet. |
 
-**Claim All** appears when anything is claimable and mints every vested tranche across all your graduated Moments in one transaction. The sheet lists each $TICKER it will claim.
+**Claim All** appears when anything is claimable and mints every vested tranche across all your graduated Moments of the current cohort in one transaction. The sheet lists each $TICKER it will claim. Past Cohorts (below) are not included.
 
 ## Your Moments
 
 One row per Moment: "N editions · promised X · claimed Y · in wallet Z" (plus "creator" if it's yours), with the right side showing claimable, pending or expired. Tap a row to open the Moment.
 
 Empty state: *"Collect a Moment and it shows up here with its editions and coins."*
+
+## Past Cohorts
+
+If you hold an edition or coins in a Moment from a retired cohort (cohorts 1 and 2, retired on 2026-09-23), or created one, a **Past Cohorts** section follows your Moments: *"Earlier DyorHQ Moments contracts. Collecting is closed; claim your vested coins and, as a creator, withdraw your own proceeds."*
+
+Each row shows your editions, coins vesting or in your wallet, and what's claimable or left to withdraw. Tap it to open the Moment's claim-only page. Past cohorts are outside the four tiles and outside **Claim All**; claim each from its own page. The same list appears as a **Past Cohorts** card in Portfolio. See [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md).
 
 ## Where else Moments show up
 
