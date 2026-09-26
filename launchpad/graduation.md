@@ -8,10 +8,12 @@ The curve tracks how much of the pair asset it has raised (net of fees). When a 
 
 | Pair asset | Threshold |
 | --- | --- |
-| MON | 196,916.91 MON |
+| MON | 167,413.31 MON |
 | USDC | 4,324.56 USDC |
 | AUSD | 4,324.56 AUSD |
-| aBIL | 47.2177 aBIL |
+| aBIL | 47.1999 aBIL |
+
+These are the current Launchpad's thresholds (deployed 2026-09-23). The MON and aBIL figures were fixed from those assets' prices at deployment. A coin launched on one of the earlier, retired Launchpads keeps the threshold it was launched with; its page shows its own *"Graduates at X \<PAIR\> raised"* figure. See [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md).
 
 ## What happens at graduation
 

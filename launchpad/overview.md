@@ -33,12 +33,14 @@ The DyorHQ Launchpad is a fair-launch bonding curve on Monad. Anyone can launch 
 
 | Pair asset | Raised on the curve to graduate | Graduates on |
 | --- | --- | --- |
-| MON | 196,916.91 MON | Uniswap v4 (default) or Monday Trade (as TOKEN/WMON) |
+| MON | 167,413.31 MON | Uniswap v4 (default) or Monday Trade (as TOKEN/WMON) |
 | USDC | 4,324.56 USDC | Uniswap v4 (default) or Monday Trade |
 | AUSD | 4,324.56 AUSD | Uniswap v4 (default) or Monday Trade |
-| aBIL | 47.2177 aBIL | Monday Trade only |
+| aBIL | 47.1999 aBIL | Monday Trade only |
 
 The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aBIL thresholds were fixed at deployment from the prices at the time, so their dollar value moves with those assets. The app always shows the live threshold for the pair you pick ("Graduates at X \<PAIR\> raised").
+
+These are the thresholds of the current Launchpad, deployed on 2026-09-23 with MON at about $0.0258 and aBIL at about $91.62. Coins launched on the earlier, now retired Launchpads keep the thresholds they were launched with; see [Past Cohorts & Retired Launchpads](../resources/past-cohorts-and-retired-launchpads.md).
 
 ## Explore screen
 
