@@ -60,6 +60,7 @@
 ## Resources
 
 * [Contracts & Addresses](resources/contracts-and-addresses.md)
+* [Past Cohorts & Retired Launchpads](resources/past-cohorts-and-retired-launchpads.md)
 * [Risk Disclosures](resources/risk-disclosures.md)
 * [FAQ](resources/faq.md)
 * [Glossary](resources/glossary.md)
