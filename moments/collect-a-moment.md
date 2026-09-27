@@ -4,10 +4,6 @@ Collecting mints you an NFT edition of the Moment and, if the Moment ever gradua
 
 **Where:** Moments tab → tap a Moment → **Collect** section (visible while the Moment is Collecting). You need **USDC** for the price and **MON** for gas.
 
-{% hint style="info" %}
-📸 **Screenshot here:** A Moment page with the Collect section: Editions stepper, You pay / You get rows and the "Collect N Editions" button. Suggested file: `.gitbook/assets/43-collect.png`
-{% endhint %}
-
 ## The Moment page
 
 * **Header**: the media, name, $TICKER, state badge ("Collecting · 2d 3h left"), place and date. The share button (top right) shares the Moment's OpenSea page (edition #1).
@@ -32,7 +28,7 @@ Afterwards your editions show under **Your Position**, on OpenSea, on **Home →
 
 ## The collect that graduates the Moment
 
-If your collect would push the reserve over the threshold, the button changes to **Collect and Graduate** and a notice explains: *"This collect completes the Moment: it takes only what the reserve still needs ($x for N editions) and graduates the coin in the same transaction."* You're charged only the accepted amount, you get the corresponding editions, and the pool is created in your transaction (it needs a bit more gas than a normal collect). The confirmation shows "Graduates: Yes, in this transaction".
+If your collect would push the reserve over the threshold, the button changes to **Collect and Graduate** and a notice explains: _"This collect completes the Moment: it takes only what the reserve still needs ($x for N editions) and graduates the coin in the same transaction."_ You're charged only the accepted amount, you get the corresponding editions, and the pool is created in your transaction (it needs a bit more gas than a normal collect). The confirmation shows "Graduates: Yes, in this transaction".
 
 ## What each edition is
 
@@ -42,14 +38,10 @@ If your collect would push the reserve over the threshold, the button changes to
 
 ## Messages you might see
 
-| Message | Meaning |
-| --- | --- |
-| The collect window has closed. | The deadline passed; the Moment may be expired or wound down. |
-| This Moment is no longer collecting. | Graduated, expired or pending graduation. |
-| Choose between 1 and 20 editions. | Batch limit. |
-| Sign in to collect. / You are watching this address. Sign in to collect. | Watch-only or signed out. |
-| Sign in with a wallet that can sign to collect. | The active wallet type can't sign the Permit2 message. |
-
-## Before you collect
-
-Every collect is paid in USDC and split 75% reserve, 20% creator, 5% DyorHQ, as the footer under the button says. The coin, if it ever exists, is a financial asset that can lose value, may be taxable when sold, and starts with a pool only as deep as the reserve. Check the **Holders** section: a Moment collected by one wallet reads very differently from one collected by hundreds.
+| Message                                                                  | Meaning                                                       |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| The collect window has closed.                                           | The deadline passed; the Moment may be expired or wound down. |
+| This Moment is no longer collecting.                                     | Graduated, expired or pending graduation.                     |
+| Choose between 1 and 20 editions.                                        | Batch limit.                                                  |
+| Sign in to collect. / You are watching this address. Sign in to collect. | Watch-only or signed out.                                     |
+| Sign in with a wallet that can sign to collect.                          | The active wallet type can't sign the Permit2 message.        |
