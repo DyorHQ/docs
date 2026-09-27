@@ -1,37 +1,35 @@
 # Perps Overview
 
-DyorHQ trades perpetual futures on **Perpl**, the fully on-chain perpetuals order book on Monad. Your wallet talks to Perpl's exchange contract directly: your collateral sits in your own Perpl account, and every order is signed by you.
+DyorHQ trades perpetual futures on **Perpl Trade**, the fully on-chain perpetuals order book on Monad. Your wallet talks to Perpl's exchange contract directly: your collateral sits in your own Perpl account, and every order is signed by you.
 
 **Where:** Trade tab → **Perps** (or side menu → Perps).
 
-{% hint style="info" %}
-📸 **Screenshot here:** Perps screen in Trade view showing the market header, order ticket and Long/Short buttons. Suggested file: `.gitbook/assets/20-perps.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_15-12-37.png" alt=""><figcaption></figcaption></figure>
 
 ## Markets
 
-| Market | Asset |
-| --- | --- |
-| BTC-PERP | Bitcoin |
-| MON-PERP | Monad |
-| ETH-PERP | Ether |
-| SOL-PERP | Solana |
+| Market    | Asset       |
+| --------- | ----------- |
+| BTC-PERP  | Bitcoin     |
+| MON-PERP  | Monad       |
+| ETH-PERP  | Ether       |
+| SOL-PERP  | Solana      |
 | HYPE-PERP | Hyperliquid |
-| ZEC-PERP | Zcash |
+| ZEC-PERP  | Zcash       |
 
 Tap the market name at the top to open **Select Perpetual**, with search, mark price and 24h change per market. BTC is selected when you first open the tab.
 
 ## Key facts
 
-| | |
-| --- | --- |
-| Collateral | **AUSD** (6 decimals). Deposit at least **10 AUSD** to open your account. |
-| Margin mode | **Isolated** only (Perpl offers isolated margin only). |
-| Leverage | Set per order with the leverage button. Default comes from Profile → Trading Preferences (2× out of the box). Each market caps leverage at 1 ÷ its initial margin fraction (for example 10× where initial margin is 10%). |
-| Order types | Market (immediate-or-cancel at mark ± your slippage), Limit (Last or Mid price fill), with optional Take Profit / Stop Loss, Post-Only and Reduce Only. |
-| Fees | Perpl's trading fee; the ticket estimates 0.069% of notional. |
-| Funding | Hourly. Positive rate: longs pay shorts. Shown with a countdown on the ticket. |
-| Data | Exchange contract polled every 8 s; live order book and trades over Perpl's market-data feed; candles refreshed every 15 s. |
+|             |                                                                                                                                                                                                                           |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Collateral  | **AUSD** (6 decimals). Deposit at least **10 AUSD** to open your account.                                                                                                                                                 |
+| Margin mode | **Isolated** only (Perpl offers isolated margin only).                                                                                                                                                                    |
+| Leverage    | Set per order with the leverage button. Default comes from Profile → Trading Preferences (2× out of the box). Each market caps leverage at 1 ÷ its initial margin fraction (for example 10× where initial margin is 10%). |
+| Order types | Market (immediate-or-cancel at mark ± your slippage), Limit (Last or Mid price fill), with optional Take Profit / Stop Loss, Post-Only and Reduce Only.                                                                   |
+| Fees        | Perpl's trading fee; the ticket estimates 0.069% of notional.                                                                                                                                                             |
+| Funding     | Hourly. Positive rate: longs pay shorts. Shown with a countdown on the ticket.                                                                                                                                            |
+| Data        | Exchange contract polled every 8 s; live order book and trades over Perpl's market-data feed; candles refreshed every 15 s.                                                                                               |
 
 ## The two views
 
@@ -44,7 +42,7 @@ Below both: **Positions**, **Orders**, **Assets** and **Trade History** tabs.
 
 ## The ⋯ menu
 
-**Deposit AUSD**, **Withdraw AUSD**, **Portfolio** (your Perpl account value, volume, realized P&L, win rate, fills and closed positions), and a live-data status line ("Live market data" / "Connecting…").
+**Deposit AUSD**, **Withdraw AUSD**, **Portfolio** (your Perpl account value, volume, realized P\&L, win rate, fills and closed positions), and a live-data status line ("Live market data" / "Connecting…").
 
 ## Set-up checklist
 

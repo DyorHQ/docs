@@ -31,7 +31,7 @@
 
 ## Launchpad
 
-* [Launchpad Overview](launchpad/overview.md)
+* [Overview](launchpad/overview.md)
 * [Launch a Coin](launchpad/launch-a-coin.md)
 * [Trading on the Curve](launchpad/trading-on-the-curve.md)
 * [Graduation](launchpad/graduation.md)

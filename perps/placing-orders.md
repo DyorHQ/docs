@@ -2,9 +2,7 @@
 
 **Where:** Trade tab → Perps → **Trade** view.
 
-{% hint style="info" %}
-📸 **Screenshot here:** The order ticket with Limit selected, TP/SL fields open and the summary rows (Liq. Price, Max, Fee). Suggested file: `.gitbook/assets/23-order-ticket.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_15-12-37.png" alt=""><figcaption></figcaption></figure>
 
 ## The order ticket, top to bottom
 
@@ -34,10 +32,10 @@ Rests on Perpl's book at your price. **Post-Only** guarantees you're the maker (
 
 TP/SL orders are **keeper-managed triggers linked to your position** and need [One-Click Trading](one-click-trading.md). The status line under the fields tells you where you stand:
 
-* *Placed on Perpl as keeper-managed trigger orders linked to this position.*
-* *Connecting to Perpl trading to place your take-profit and stop-loss.*
-* *Connect Perpl trading in Profile to place take-profit and stop-loss.* / *Enable one-click trading in Profile to place take-profit and stop-loss.*
-* *Couldn't reach Perpl trading, retrying. Take-profit and stop-loss need it live.*
+* _Placed on Perpl as keeper-managed trigger orders linked to this position._
+* _Connecting to Perpl trading to place your take-profit and stop-loss._
+* _Connect Perpl trading in Profile to place take-profit and stop-loss._ / _Enable one-click trading in Profile to place take-profit and stop-loss._
+* _Couldn't reach Perpl trading, retrying. Take-profit and stop-loss need it live._
 
 Rules: for a long, take-profit must be above entry and stop-loss below; for a short the reverse. The app checks this and tells you which side is wrong. Take profit triggers on the **Last** price; stop loss triggers on the **Mark** price.
 
@@ -47,20 +45,20 @@ If you place TP/SL without One-Click Trading, the position opens but the confirm
 
 Tap **Long** or **Short**.
 
-* **With One-Click Trading:** the **Place Order** sheet ("Review Order · Perpl") lists Market, Side, Type, Size, Leverage, Margin, Take profit, Stop loss, then *"Signed and forwarded by your Perpl API key over the trading connection."* You'll see "Order sent to Perpl." on success. If the position opened but a trigger was rejected, the sheet says so and you can set it again from the ticket.
-* **Without:** the **Review Order** sheet with Market, Side, Type, Size, Leverage and Margin rows (plus the TP/SL warning if you typed triggers), confirmed with **Long \<ASSET\>** / **Short \<ASSET\>** and signed as an on-chain transaction from your wallet.
+* **With One-Click Trading:** the **Place Order** sheet ("Review Order · Perpl") lists Market, Side, Type, Size, Leverage, Margin, Take profit, Stop loss, then _"Signed and forwarded by your Perpl API key over the trading connection."_ You'll see "Order sent to Perpl." on success. If the position opened but a trigger was rejected, the sheet says so and you can set it again from the ticket.
+* **Without:** the **Review Order** sheet with Market, Side, Type, Size, Leverage and Margin rows (plus the TP/SL warning if you typed triggers), confirmed with **Long \<ASSET>** / **Short \<ASSET>** and signed as an on-chain transaction from your wallet.
 
 With **Require Face ID** on, on-chain orders prompt for Face ID before signing. Orders forwarded through One-Click Trading are signed by your trading key and don't prompt.
 
 ## Validation messages
 
-| Message | Fix |
-| --- | --- |
-| Deposit AUSD to open a trading account first. | Make your first deposit (10 AUSD minimum). |
-| Enter an amount in AUSD. / Enter a size in \<ASSET\>. | Fill the amount. |
-| Enter a limit price. | Fill the price on a limit order. |
-| Not enough available margin. | Reduce size or leverage, or deposit more. |
-| Take-profit must be above your entry (X) for a long. (and the other three variants) | Move the trigger to the correct side. |
+| Message                                                                             | Fix                                        |
+| ----------------------------------------------------------------------------------- | ------------------------------------------ |
+| Deposit AUSD to open a trading account first.                                       | Make your first deposit (10 AUSD minimum). |
+| Enter an amount in AUSD. / Enter a size in \<ASSET>.                                | Fill the amount.                           |
+| Enter a limit price.                                                                | Fill the price on a limit order.           |
+| Not enough available margin.                                                        | Reduce size or leverage, or deposit more.  |
+| Take-profit must be above your entry (X) for a long. (and the other three variants) | Move the trigger to the correct side.      |
 
 ## Funding
 

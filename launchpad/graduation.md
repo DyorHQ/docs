@@ -6,12 +6,12 @@ Graduation is the moment a coin leaves its bonding curve and becomes a normal to
 
 The curve tracks how much of the pair asset it has raised (net of fees). When a buy pushes that amount to the pair's threshold, the curve is complete and graduation runs **in the same transaction**. The final buy is clamped to exactly what the curve needs; any excess is refunded to the buyer.
 
-| Pair asset | Threshold |
-| --- | --- |
-| MON | 196,916.91 MON |
-| USDC | 4,324.56 USDC |
-| AUSD | 4,324.56 AUSD |
-| aBIL | 47.2177 aBIL |
+| Pair asset | Threshold      |
+| ---------- | -------------- |
+| MON        | 196,916.91 MON |
+| USDC       | 4,324.56 USDC  |
+| AUSD       | 4,324.56 AUSD  |
+| aBIL       | 47.2177 aBIL   |
 
 ## What happens at graduation
 
@@ -20,23 +20,15 @@ The curve tracks how much of the pair asset it has raised (net of fees). When a 
    * **Uniswap v4**: a full-range position in the canonical Uniswap v4 PoolManager on Monad, with the DyorHQ hook attached (that's what charges the 1% pool fee and creator tax). Locked in the DyorHQ **LaunchLocker**.
    * **Monday Trade**: a full-range position in a Monday spot pool at the 1% fee tier. Native-MON coins pair with WMON on Monday. Locked in the DyorHQ **Monday fee vault**.
 3. The position is locked. **Neither locker has a function that removes liquidity**, not for the creator, not for DyorHQ. Only earned fees can ever leave.
-4. The coin's page switches to **Graduated** and shows a **Swap TICKER on \<VENUE\>** button that opens the Swap screen with the pair preselected. The **Pool fee** row there reads the pool's own LP fee, which is 0% on Uniswap v4 because the 1% is charged by the hook instead.
+4. The coin's page switches to **Graduated** and shows a **Swap TICKER on \<VENUE>** button that opens the Swap screen with the pair preselected. The **Pool fee** row there reads the pool's own LP fee, which is 0% on Uniswap v4 because the 1% is charged by the hook instead.
 
-{% hint style="info" %}
-📸 **Screenshot here:** A graduated coin page with the "Graduated" section and the "Swap TICKER on Uniswap v4" button. Suggested file: `.gitbook/assets/34-graduated.png`
-{% endhint %}
+
 
 ## Choosing the venue
 
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_16-01-39.png" alt=""><figcaption></figcaption></figure>
+
 The creator picks **Uniswap v4** or **Monday Trade** at launch. aBIL-paired coins can only graduate on Monday Trade (that's where aBIL has liquidity).
-
-If someone pre-created a Monday pool at the wrong price to interfere with a graduation, the executor realigns it with a small bounded swap; if that can't be done safely the graduation reverts and the fallback below applies. On Uniswap v4 nobody but the DyorHQ executor can initialise a registered pool, so this can't happen there.
-
-## If graduation gets stuck
-
-Graduation can fail (for instance if the venue rejects the pool creation). On-chain, anyone can retry (`graduate`) paying only gas, and a Monday-venue launch can fall back into a locked Uniswap v4 pool (`graduateFallback`); aBIL launches need DyorHQ to enable that fallback first. The app has **Retry Graduation** and **Graduate on Uniswap v4 Instead** sheets built for this, but they aren't reachable for a stuck launch in the current build, so a stuck launch is handled on-chain or with support's help.
-
-If graduation keeps failing for **7 days**, the owner can put the launch into **Refund mode**: buys close and sells are fee-free at the curve price, so holders can exit. Refund-mode selling isn't exposed in the iOS app yet.
 
 ## Trading after graduation
 

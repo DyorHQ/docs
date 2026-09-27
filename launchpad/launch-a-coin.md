@@ -2,9 +2,7 @@
 
 **Where:** Launch tab → **New Launch** (the + button). You need a wallet that can sign, at least **5 MON** for the launch fee plus gas, and a little more if you add a developer buy.
 
-{% hint style="info" %}
-📸 **Screenshot here:** "Launch a Coin" form with the Image, Coin, Links and Pairing sections visible. Suggested file: `.gitbook/assets/31-launch-form.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_15-50-13.png" alt=""><figcaption></figcaption></figure>
 
 ## The form
 
@@ -14,7 +12,7 @@ Tap **Choose Image** and pick an image from your photos (square looks best). It'
 
 ### Your Coin (preview)
 
-Once the form is valid, a live card shows your name, $TICKER, a **New** badge and "Pairs with \<PAIR\>".
+Once the form is valid, a live card shows your name, $TICKER, a **New** badge and "Pairs with \<PAIR>".
 
 ### Coin
 
@@ -30,7 +28,7 @@ Once the form is valid, a live card shows your name, $TICKER, a **New** badge an
 
 * **Paired with**: MON, USDC, AUSD or aBIL. Only pairs approved on the factory are listed.
 * **Graduates on**: **Uniswap v4** (default) or **Monday Trade**. aBIL coins graduate on Monday Trade only, so the picker locks for that pair.
-* The footer tells you the live terms: *"Graduates to a locked \<VENUE\> pool once the curve raises \<THRESHOLD\> \<PAIR\>. Launch fee 5 MON."* (for aBIL it adds *"aBIL coins graduate on Monday Trade."*)
+* The footer tells you the live terms: _"Graduates to a locked \<VENUE> pool once the curve raises \<THRESHOLD> \<PAIR>. Launch fee 5 MON."_ (for aBIL it adds _"aBIL coins graduate on Monday Trade."_)
 
 ### Developer Buy (Optional)
 
@@ -47,24 +45,20 @@ The creator's fee recipient is the launching wallet.
 
 Tap **Review**. The confirmation sheet, titled **Launch TICKER**, lists:
 
-| Row | |
-| --- | --- |
-| Coin | name ($TICKER) |
-| Paired with | pair asset |
-| Graduation | threshold in the pair asset |
-| Graduation venue | Uniswap v4 or Monday Trade |
-| Creator tax | your setting |
-| Fee sharing | On / Off |
-| Launch fee | 5 MON |
-| Developer buy | amount, if set |
+| Row              |                             |
+| ---------------- | --------------------------- |
+| Coin             | name ($TICKER)              |
+| Paired with      | pair asset                  |
+| Graduation       | threshold in the pair asset |
+| Graduation venue | Uniswap v4 or Monday Trade  |
+| Creator tax      | your setting                |
+| Fee sharing      | On / Off                    |
+| Launch fee       | 5 MON                       |
+| Developer buy    | amount, if set              |
 
 Tap **Launch TICKER**. The launch fee is paid in MON on top of any developer buy. Right before sending, the app reads the factory's current terms and embeds their hash in the transaction; if DyorHQ changed anything between your review and the transaction landing, it reverts rather than launching on different terms.
 
 When it confirms, tap **View** to open your coin's page. "Launched $TICKER" appears in Recent Activity and in **My Launchpad → Launches**.
-
-{% hint style="info" %}
-📸 **Screenshot here:** The "Launch $TICKER" confirmation sheet. Suggested file: `.gitbook/assets/32-launch-confirm.png`
-{% endhint %}
 
 ## Tips for creators
 

@@ -4,21 +4,19 @@ Plain orders go straight to Perpl's exchange contract as on-chain transactions f
 
 ## What it unlocks
 
-| Feature | Without One-Click | With One-Click |
-| --- | --- | --- |
-| Market and limit orders | ✅ On-chain, signed per order | ✅ Signed by your trading key and forwarded instantly |
-| Take Profit / Stop Loss | ❌ "TP/SL: Needs one-click trading, not placed" | ✅ Placed as keeper-managed trigger orders |
-| Trade History tab | ❌ "Connect Perpl trading in Profile to see your history." | ✅ (needs the trading key from step 2; forwarding not required) |
-| Perps Portfolio history (fills, closed positions, fees) | ❌ | ✅ (same: trading key) |
-| Perps figures in your DyorHQ Portfolio | Zeros, with a note | ✅ (same: trading key) |
+| Feature                                                 | Without One-Click                                         | With One-Click                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------- |
+| Market and limit orders                                 | ✅ On-chain, signed per order                              | ✅ Signed by your trading key and forwarded instantly           |
+| Take Profit / Stop Loss                                 | ❌ "TP/SL: Needs one-click trading, not placed"            | ✅ Placed as keeper-managed trigger orders                      |
+| Trade History tab                                       | ❌ "Connect Perpl trading in Profile to see your history." | ✅ (needs the trading key from step 2; forwarding not required) |
+| Perps Portfolio history (fills, closed positions, fees) | ❌                                                         | ✅ (same: trading key)                                          |
+| Perps figures in your DyorHQ Portfolio                  | Zeros, with a note                                        | ✅ (same: trading key)                                          |
 
 ## Set it up
 
 **Where:** Profile → **Perpl Trading**.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Perpl Trading settings screen showing Status, the Connection section and "Enable One-Click Trading". Suggested file: `.gitbook/assets/22-one-click.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_15-23-18.png" alt=""><figcaption></figcaption></figure>
 
 1. Make sure you've made your first deposit (the app needs a Perpl account to enrol against).
 2. Tap **Connect Perpl Trading**. The app generates a trading key on your device and asks your wallet to sign Perpl's authorisation message once. The key is stored in the Keychain, device-only, never synced.
@@ -27,7 +25,7 @@ Plain orders go straight to Perpl's exchange contract as on-chain transactions f
 
 Statuses you'll see along the way: Not connected → Enrolled → Connecting… → Enable one-click → Ready. **Reconnect** and **Try Again** appear if the connection drops; **Disconnect** closes the live session; **Remove API Key** (red) deletes the key from this device so you can enrol a fresh one.
 
-The footer explains it in one line: *"Your trading key is generated on this device and authorized once by your wallet."*
+The footer explains it in one line: _"Your trading key is generated on this device and authorized once by your wallet."_
 
 ## Good to know
 

@@ -1,12 +1,10 @@
-# Launchpad Overview
+# Overview
 
 The DyorHQ Launchpad is a fair-launch bonding curve on Monad. Anyone can launch a coin, anyone can trade it on the curve, and when the curve raises its target the liquidity moves into a pool that is **locked forever**. The twist: a coin can be paired with **MON, USDC, AUSD or aBIL**, a tokenized T-bill stock, which is what "launching a memecoin paired with a tokenized RWA" means in practice.
 
 **Where:** the **Launch** tab.
 
-{% hint style="info" %}
-📸 **Screenshot here:** Launch tab showing the Graduated and Explore sections with coin cards. Suggested file: `.gitbook/assets/30-launchpad.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_15-32-41.png" alt=""><figcaption></figcaption></figure>
 
 ## How it works
 
@@ -17,28 +15,28 @@ The DyorHQ Launchpad is a fair-launch bonding curve on Monad. Anyone can launch 
 
 ## The numbers
 
-| Parameter | Value |
-| --- | --- |
-| Supply per coin | 1,000,000,000 (fixed, no minting after launch) |
-| Launch fee | 5 MON |
-| Curve trade fee | 1% (buys: off the input; sells: off the output) |
-| Creator tax | 0% to 10%, chosen at launch in 0.25% steps |
-| Early-buy tax | 98% → 25% → 3% → 0.3% in seconds 0–3 after launch, then 0 |
-| Fee split | 50% DyorHQ / 50% creator (or holders) |
-| Withheld from the curve | About 31.6% of supply (about 68.4% is sold on the curve). At graduation about 21.6% goes into the pool; the remaining 10% (100M coins) is locked, unpaired, in the locker |
-| Launch valuation → graduation valuation | 10× (a coin launches at about a $2,000 FDV and graduates at about $20,000) |
-| Slippage on curve trades | 1% minimum-received floor |
+| Parameter                               | Value                                                                                                                                                                     |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supply per coin                         | 1,000,000,000 (fixed, no minting after launch)                                                                                                                            |
+| Launch fee                              | 5 MON                                                                                                                                                                     |
+| Curve trade fee                         | 1% (buys: off the input; sells: off the output)                                                                                                                           |
+| Creator tax                             | 0% to 10%, chosen at launch in 0.25% steps                                                                                                                                |
+| Early-buy tax                           | 98% → 25% → 3% → 0.3% in seconds 0–3 after launch, then 0                                                                                                                 |
+| Fee split                               | 50% DyorHQ / 50% creator (or holders)                                                                                                                                     |
+| Withheld from the curve                 | About 31.6% of supply (about 68.4% is sold on the curve). At graduation about 21.6% goes into the pool; the remaining 10% (100M coins) is locked, unpaired, in the locker |
+| Launch valuation → graduation valuation | 10× (a coin launches at about a $2,000 FDV and graduates at about $20,000)                                                                                                |
+| Slippage on curve trades                | 1% minimum-received floor                                                                                                                                                 |
 
 ### Graduation thresholds by pair asset
 
-| Pair asset | Raised on the curve to graduate | Graduates on |
-| --- | --- | --- |
-| MON | 196,916.91 MON | Uniswap v4 (default) or Monday Trade (as TOKEN/WMON) |
-| USDC | 4,324.56 USDC | Uniswap v4 (default) or Monday Trade |
-| AUSD | 4,324.56 AUSD | Uniswap v4 (default) or Monday Trade |
-| aBIL | 47.2177 aBIL | Monday Trade only |
+| Pair asset | Raised on the curve to graduate | Graduates on                                         |
+| ---------- | ------------------------------- | ---------------------------------------------------- |
+| MON        | 196,916.91 MON                  | Uniswap v4 (default) or Monday Trade (as TOKEN/WMON) |
+| USDC       | 4,324.56 USDC                   | Uniswap v4 (default) or Monday Trade                 |
+| AUSD       | 4,324.56 AUSD                   | Uniswap v4 (default) or Monday Trade                 |
+| aBIL       | 47.2177 aBIL                    | Monday Trade only                                    |
 
-The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aBIL thresholds were fixed at deployment from the prices at the time, so their dollar value moves with those assets. The app always shows the live threshold for the pair you pick ("Graduates at X \<PAIR\> raised").
+The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aBIL thresholds were fixed at deployment from the prices at the time, so their dollar value moves with those assets. The app always shows the live threshold for the pair you pick ("Graduates at X \<PAIR> raised").
 
 ## Explore screen
 
@@ -50,16 +48,14 @@ The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aB
 
 ## Lifecycle states
 
-| State | What it means |
-| --- | --- |
-| **Bonding** | Trading on the curve. |
+| State         | What it means                                                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Bonding**   | Trading on the curve.                                                                                                        |
 | **Migrating** | A transient state inside the graduating transaction; you won't normally see it. Once the pool exists, trading moves to Swap. |
-| **Graduated** | Pool is live and locked; trade via Swap. |
-| **Stuck** | The graduation attempt failed. Anyone can retry on-chain, and a Monday-venue launch can fall back to Uniswap v4 (aBIL launches only after DyorHQ enables the fallback). The retry buttons are not yet reachable in the iOS app. |
-| **Refund mode** | If graduation keeps failing for 7 days, the owner can put the launch into refund mode: buys close and sells are fee-free at the curve price. Refund-mode selling is a contract feature the iOS app does not expose yet. |
+| **Graduated** | Pool is live and locked; trade via Swap.                                                                                     |
 
 ## What the owner can and cannot do
 
-The contracts are immutable. DyorHQ can set the launch fee, fee policy and maximum creator tax for **future** launches, approve pair assets, turn a launch whitelist on or off, change where its own fee share is paid, trigger refund mode after 7 days of failed graduations, enable the Uniswap v4 fallback for aBIL launches, and (with a 3-day timelock, which the current recipient can veto) hand an abandoned launch's fee stream to a new recipient. DyorHQ cannot withdraw locked liquidity, touch a curve's reserves, change a live launch's fees, mint tokens or pause trading. The Launchpad went through an internal security audit in September 2026 and was redeployed with the fixes.
+DyorHQ cannot withdraw locked liquidity, touch a curve's reserves, change a live launch's fees, mint tokens or pause trading.
 
 Next: [Launch a Coin](launch-a-coin.md), [Trading on the Curve](trading-on-the-curve.md), [Graduation](graduation.md), [Creator Fees & Holder Rewards](fees-and-rewards.md).
