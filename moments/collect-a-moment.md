@@ -6,7 +6,7 @@ Collecting mints you an NFT edition of the Moment and, if the Moment ever gradua
 
 ## The Moment page
 
-* **Header**: the media, name, $TICKER, state badge ("Collecting · 2d 3h left"), place and date. The share button (top right) shares the Moment's OpenSea page (edition #1).
+* **Header**: the media, name, $TICKER, state badge ("Collecting · 2d 3h left"), place and date. The share button (top right) shares the Moment's link, `dyorhq.fun/moments/<name>`. With the DyorHQ app installed it opens the Moment in the app; otherwise it opens the website. The OpenSea link is under **About this Moment**.
 * **Progress**: the Graduation gauge, **Reserve** ($x of $771.428571), **Still needed** ($x · about N collects) and **Window closes**.
 * **Stats**: Per edition, Graduation FDV, Editions, Collects (or Coin price, FDV and Since open after graduation).
 * **Collect** (below).
@@ -22,7 +22,7 @@ Collecting mints you an NFT edition of the Moment and, if the Moment ever gradua
 4. Tap **Collect N Editions**.
 5. The **Collect TICKER** sheet lists Moment, Editions, You pay, Coins owed and "Your NFT: On OpenSea once it settles". Tap **Collect**.
 
-Steps: **Approve USDC for Permit2** (once, skipped afterwards) then the collect itself, which carries a signed Permit2 transfer for up to price × editions (valid 30 minutes). The contract pulls only the quoted USDC.
+Steps: **Approve USDC**, an exact approval of the Moments collect contract for what you pay (skipped when an existing allowance already covers the amount), then the collect itself. There's no separate message to sign, and the contract pulls only the quoted USDC.
 
 Afterwards your editions show under **Your Position**, on OpenSea, on **Home → My Holdings → Moments**, and in **My Moments**.
 
@@ -44,4 +44,3 @@ If your collect would push the reserve over the threshold, the button changes to
 | This Moment is no longer collecting.                                     | Graduated, expired or pending graduation.                     |
 | Choose between 1 and 20 editions.                                        | Batch limit.                                                  |
 | Sign in to collect. / You are watching this address. Sign in to collect. | Watch-only or signed out.                                     |
-| Sign in with a wallet that can sign to collect.                          | The active wallet type can't sign the Permit2 message.        |

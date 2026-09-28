@@ -20,7 +20,7 @@
 
 ### Economics
 
-* **Collect price** in USDC (default 1, minimum **0.10**).
+* **Collect price** in USDC (default 1, minimum **0.10**, maximum **1,028.571428**, the price at which a single collect completes the reserve; a higher price is refused).
 * **Your allocation**: 0–10% of the 100M coins (default 10).
 * **Collect window**: 1 to 30 days.
 
@@ -32,7 +32,7 @@ Once valid, a summary shows: Collect price · Graduates at ($771.428571 reserve 
 
 ## Review and publish
 
-Tap **Review**. The **Publish TICKER** sheet lists the Moment, collect price, graduation terms, your coins, window and how the media is recorded ("photo, fingerprinted" / "video, fingerprinted" / "link, hashed"). Tap **Publish**. It's a single transaction; when it confirms your new Moment page opens.
+Tap **Review**. The **Publish TICKER** sheet lists the Moment, collect price, graduation terms, your coins, window and how the media is recorded: "photo, fingerprinted · IPFS", "video, fingerprinted · IPFS", "photo, fingerprinted · DyorHQ link, not IPFS" (when IPFS pinning failed and you chose DyorHQ's link) or "link, hashed". Tap **Publish**. It's a single transaction; when it confirms your new Moment page opens.
 
 ## Choosing your settings
 

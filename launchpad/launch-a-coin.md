@@ -58,14 +58,14 @@ Tap **Review**. The confirmation sheet, titled **Launch TICKER**, lists:
 
 Tap **Launch TICKER**. The launch fee is paid in MON on top of any developer buy. Right before sending, the app reads the factory's current terms and embeds their hash in the transaction; if DyorHQ changed anything between your review and the transaction landing, it reverts rather than launching on different terms.
 
-When it confirms, tap **View** to open your coin's page. "Launched $TICKER" appears in Recent Activity and in **My Launchpad → Launches**.
+When it confirms, tap **View** to open your coin's page. "Launched $TICKER" appears in Recent Activity and in **My Launchpad → Activity**, and the coin is listed under **My Launchpad → Launches**.
 
 ## Tips for creators
 
 * **Fee sharing is the community option.** It's on by default. Turn it off only if you want fees paid to your wallet, and say so in the description.
-* **Only your launching wallet (including its developer buy) is exempt from the early-buy tax.** Everyone else pays 98% in second 0.
+* **Only your launching wallet (including its developer buy) is exempt from the early-buy tax.** Everyone else pays up to 98% in second 0: the early-buy tax is 98% minus the creator tax, because the curve fee, creator tax and early-buy tax together never exceed 99% of a buy.
 * **Square images look best**, as the form says.
-* **Nothing can be edited after launch**: name, ticker, image, links, pair, venue, tax and fee mode are all permanent.
+* **Nothing about the coin can be edited after launch**: name, ticker, image, links, pair, creator tax and fee mode are all permanent. The graduation venue changes only if a Monday Trade graduation gets stuck and the coin graduates into a locked Uniswap v4 pool instead, and the fee recipient can be handed to another address (see [Creator Fees & Holder Rewards](fees-and-rewards.md)).
 
 {% hint style="warning" %}
 Coins you launch are tradeable by anyone, on a public chain, immediately. You can't pause, delist or recall them.

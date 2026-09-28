@@ -23,7 +23,7 @@ Tokens come from Aurora's list for each chain, with stablecoins (USDC, USDT0, US
 
 _Sending on \<Chain>…_ → _Notifying the bridge…_ → _Confirming your deposit…_ → _Waiting for the full deposit…_ → _Bridging across chains…_ → **Arrived** (or **Refunded** / **Failed**).
 
-When it lands: "Arrived on Monad · Received X", with a **View** link that upgrades from the deposit transaction to the destination transaction. If it's slow you'll see _"Still settling, this can take a minute…"_ and then _"Taking longer than usual, your funds are on their way…"_; the bridge completes in the background and shows in your balance and Activity when it lands. A refund returns funds on the source chain and tells you why.
+When it lands: "Arrived on Monad · Received X", with a **View** link that upgrades from the deposit transaction to the destination transaction. If it's slow you'll see _"Still settling, this can take a minute. Check your balance on \<Chain>; DyorHQ keeps checking while it's open."_ and later _"Taking longer than usual. Check your balance on \<Chain>; DyorHQ checks again each time you open it."_ The bridge itself completes on its own. DyorHQ tracks its status while the app is open (and again when you reopen it), and it shows in your balance and Activity once it lands. A refund returns funds on the source chain and tells you why.
 
 Completed bridges appear in Portfolio under **Bridge** and post a "Bridge complete" notification.
 

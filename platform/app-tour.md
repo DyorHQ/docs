@@ -52,7 +52,7 @@ The profile row at the top opens **Profile**. The footer shows the app version a
 
 ## Conventions you'll see everywhere
 
-* **Every wallet transaction goes through a confirmation sheet** that lists exactly what will be sent (amounts, venue, route, minimums) and then shows each step as it's sent and confirmed, with a **View** link to Monadscan. The two exceptions are the bridge (its summary is the review) and One-Click perp orders (signed by your Perpl trading key).
+* **Every wallet transaction goes through a confirmation sheet** that lists exactly what will be sent (amounts, venue, route, minimums) and then shows each step as it's sent and confirmed, with a **View** link to Monadscan. The exceptions are the bridge (its summary is the review), One-Click perp orders (signed by your Perpl trading key), and the one-time **Enable One-Click Trading** transaction (Profile → Perpl Trading). With Require Face ID on, each of them still asks for Face ID.
 * **Gains and losses always carry a sign or a word**, never colour alone. Green means Long / Up, red means Short / Down (legend under Profile → Appearance).
 * **Amounts use tabular figures** so columns line up.
 * **Pull to refresh** works on Home, Portfolio, Recent Activity and the Perps Portfolio. Swap and Perps refresh themselves (quotes every 15 seconds, Perpl every 8 seconds); Home also refreshes itself every 30 seconds.

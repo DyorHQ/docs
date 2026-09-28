@@ -44,13 +44,13 @@ The app ships with Monad's official token list (mainnet v2.48). These appear in 
 
 ## Assets by product
 
-| Product               | Asset                                                    |
-| --------------------- | -------------------------------------------------------- |
-| Swap                  | Any Monad token; MON ↔ WMON wraps 1:1                    |
-| Perps                 | Collateral: AUSD. Markets: BTC, MON, ETH, SOL, HYPE, ZEC |
-| Launchpad pair assets | MON, USDC, AUSD, aBIL                                    |
-| Moments               | USDC only (collecting, reserve, trading pair)            |
+| Product               | Asset                                                                                                      |
+| --------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Swap                  | Any Monad token except coins from past Moments cohorts (trading is closed for those); MON ↔ WMON wraps 1:1 |
+| Perps                 | Collateral: AUSD. Markets: BTC, MON, ETH, SOL, HYPE, ZEC, LIT, VVV, TAO, PUMP                              |
+| Launchpad pair assets | MON, USDC, AUSD, aBIL                                                                                      |
+| Moments               | USDC only (collecting, reserve, trading pair)                                                              |
 
 ## Prices
 
-Spot prices in the app are read from the deepest on-chain pool for each token (Kuru, Uniswap v4, Uniswap v3, Monday Trade or nad.fun), quoted in USDC, AUSD or WMON and converted to USD, and the 24h change compares against the same pool one day of blocks earlier. USDC and AUSD are pinned to $1. Perps prices come from Perpl's exchange contract and market-data feed.
+Spot prices in the app are read on-chain from the deepest Uniswap v3 or Monday Trade pool for each token (against USDC, AUSD or WMON), or from its nad.fun pair; MON and WMON are priced from the Uniswap v4 MON/USDC pool. Prices are converted to USD, and the 24h change compares against the same pool one day of blocks earlier. USDC and AUSD are pinned to $1. Perps prices come from Perpl's exchange contract and market-data feed.

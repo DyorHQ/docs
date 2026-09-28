@@ -1,6 +1,6 @@
 # 🔔 Notifications & Price Alerts
 
-DyorHQ keeps you posted with iPhone notifications and an in-app notification center. Everything is generated on your device; there's no server watching your wallet.
+DyorHQ keeps you posted with iPhone notifications and an in-app notification center. Everything is generated on your device while DyorHQ is open; there's no server watching your wallet, so price alerts and fills can't reach your lock screen while the app is closed.
 
 ## Turning notifications on
 
@@ -34,4 +34,4 @@ Examples of what you'll see:
 2. Choose **Rises above** or **Falls below**.
 3. Enter a **Target** in USD and tap **Add**.
 
-Saving an alert turns on Price Alerts and requests permission if needed. Alerts are checked every 45 seconds, fire once, and are then removed. Swipe left on an alert to delete it.
+Saving an alert turns on Price Alerts and requests permission if needed. Alerts are checked every 45 seconds while DyorHQ is open, fire once, and are then removed. Don't rely on a price alert to protect a position: set a stop-loss on it. Swipe left on an alert to delete it.

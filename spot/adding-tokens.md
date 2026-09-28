@@ -14,12 +14,14 @@ If nothing matches you'll see: _"No token matches. Paste a contract address to a
 
 ## Tokens remembered for you
 
-Any token you pick, launch, buy on the Launchpad, swap into or hold shows up in your wallet's own token list afterwards, in the Swap picker, Home holdings and price alerts. Tokens discovered on-chain in your wallet are added automatically the first time the app scans it.
+Tokens you pick in the Swap picker or swap into are remembered for your wallet and show up in the Swap picker, Home holdings and price alerts.
+
+Tokens the app finds in your wallet's history that you didn't choose in DyorHQ are marked **Unverified**. They show that mark in your holdings. They stay out of the Swap picker's list and appear only when a search matches them, in an **Unverified — in your wallet** section with a warning. Completing a swap into one clears the mark.
 
 ## Coins from the Launchpad and Moments
 
 * **Graduated Launchpad coins** trade through the pool their curve migrated into (Uniswap v4 or Monday Trade). The **Swap SYM on …** button on the coin's page opens Swap with the pair preselected.
-* **Graduated Moment coins** trade on Uniswap v4 against USDC at a 1.5% all-in fee. The **Trade $SYM** button on the Moment page opens Swap with USDC → coin.
+* **Graduated Moment coins** from the current Moments release trade on Uniswap v4 against USDC at a 1.5% all-in fee. The **Trade $SYM** button on the Moment page opens Swap with USDC → coin. Coins from an earlier Moments release (a past cohort) can't be traded in the app: their token detail page shows "Past cohort · trading closed", and their Moment page reads "Past cohort — collecting closed", where holders can still claim their vested coins.
 * Coins **still on their curve** are bought and sold on the Launch tab, not in Swap.
 
 ## A word of caution

@@ -1,37 +1,41 @@
 # 📜 Contracts & Addresses
 
-Everything DyorHQ touches on Monad mainnet (chain ID 143). DyorHQ's own contracts are immutable (no proxies) and source-verified. Always confirm an address here or on [monadscan.com](https://monadscan.com) before interacting with it outside the app.
+Everything DyorHQ touches on Monad mainnet (chain ID 143). DyorHQ's own contracts are immutable (no proxies) and source-verified. Always confirm an address here or on [monadscan.com](https://monadscan.com) before interacting with it outside the app. This page is updated with each new contract release.
 
 ## DyorHQ Launchpad
 
 | Contract                            | Address                                      |
 | ----------------------------------- | -------------------------------------------- |
-| LaunchpadFactory                    | `0x10F34A174d9C393a90aFf94BDED7E1Db185446D7` |
-| LaunchAndBuyRouter                  | `0x3eE688C3b3aCd652914aD49d8Ee5ae1004bF3690` |
-| LaunchDeployer                      | `0x53C2e716bA77F75c5A433292e1017d6b8Af0A445` |
-| FeeEscrow                           | `0xbc70ba9D66F761FFb7647D6B52C8Cf65a49E47fc` |
-| HolderFeeSharing                    | `0x70F8f64c6A4A76A507e322BCef19E6E37abe4eF6` |
-| MemeHook (Uniswap v4 hook)          | `0x51A240c13164BcDF3FC11053FddEaC626A4160cc` |
-| GraduationExecutor (Uniswap v4)     | `0x787e49e7d2E1Bb1EF4Ee4A82DF1DE34fe3f745DA` |
-| MondayGraduationExecutor            | `0x5c83D58228b9Ba133E68ea583f28dddCaf488fEd` |
-| LaunchLocker (Uniswap v4 positions) | `0x86d5143A9316d97b11a2A35C2362bf1068518902` |
-| MondayFeeVault (Monday positions)   | `0x42a1C1c1d6BC2544d3f478E4d42F5b5ec75888De` |
+| LaunchpadFactory                    | `0x6B1C8769a8d6745955aC35b91FF1F37AB76859dB` |
+| LaunchAndBuyRouter                  | `0x454822dc56072696ab7cf8Bac357FFd3315477Fc` |
+| LaunchDeployer                      | `0x91666B230B7F1780C189a90Df4BC40445B88C4bE` |
+| FeeEscrow                           | `0x5EDA8765934fE22fa63d671465eF914Cd196968e` |
+| HolderFeeSharing                    | `0xc618bB26bBc3C84c30519F31e32eE52EA2BFac52` |
+| MemeHook (Uniswap v4 hook)          | `0xf2b849B3FC4a2b19B39DA3F707Fc32b801eea0Cc` |
+| GraduationExecutor (Uniswap v4)     | `0x46Ef24229a494586049584a6Ba1E5ca530A738Ad` |
+| MondayGraduationExecutor            | `0xBe0B7EA10B166Ba25577F00621211eC1036B93B3` |
+| LaunchLocker (Uniswap v4 positions) | `0xac64BbB7bc4E638Bb30889ff6FE07289a21cE331` |
+| MondayFeeVault (Monday positions)   | `0xfEEDF827c421f3a300630e680a367A42A1a26d50` |
 
 Each launched coin has its own token and curve contracts; the token address is shown under **About** on its page.
+
+**Earlier releases:** factories `0x10F34A174d9C393a90aFf94BDED7E1Db185446D7`, `0x2F02972E166dE71097EEAC8303cE7Fe6B6Ebe9f4` and `0xad3d3Cb821279E52cFD499D15b26f77976eBA1Ea`. Nothing new launches on them; coins launched there keep their pages, curves and history in the app.
 
 ## DyorHQ Moments&#x20;
 
 | Contract                        | Address                                      |
 | ------------------------------- | -------------------------------------------- |
-| MomentsFactory                  | `0xc12B6b6948185cef75F861c5327702c30CB8a581` |
-| MomentCollect                   | `0x8f65ea0236b5fa6351a45Bd48244c3525Fb92493` |
-| MomentVesting                   | `0xe087eff01C567F88a7cb6BDBDBF04B46Fee56C99` |
-| MomentGraduation                | `0x353F245A2458B994a65116A4c69643cf6608045b` |
-| MomentLocker                    | `0x995735cF317656a10de52b73AB50A2aAdc069a8a` |
-| MomentFeeHook (Uniswap v4 hook) | `0x501D703588c4feAbBeE5A9a77408c7FCbD3a20Cc` |
-| MomentBuyback                   | `0xacae95377513C54DA9ff549DFE5cB77001F6c6F5` |
+| MomentsFactory                  | `0x0FD4aC52bbf387DBB3156805769bFC0c260F7E26` |
+| MomentCollect                   | `0xb53897A4C6280480c267351518D184C2E6591D30` |
+| MomentVesting                   | `0x05584910ab57d65723eB878D295b3353a4cbb021` |
+| MomentGraduation                | `0xA2231E39ce7AE4f7d5e56Beae2dD3a8a59F3b9aA` |
+| MomentLocker                    | `0x37C5A2c15d99701CF698B146cdCD1853825Ef455` |
+| MomentFeeHook (Uniswap v4 hook) | `0xD5BFff467FDAe04664357e75bF059986c41260CC` |
+| MomentBuyback                   | `0x3B574312Bb4e1D36C9a1Ba698bf77BbD223ca913` |
 
 Each Moment has its own coin (ERC-20) and NFT (ERC-721) contracts, shown under **About this Moment**. The NFT's `external_url` points to `https://dyorhq.fun/moments/<id>`.
+
+**Earlier releases (past cohorts):** factories `0xc12B6b6948185cef75F861c5327702c30CB8a581` and `0x64698c7702d85F87f43a6dFF7D495CDD2327C020`. Publishing is closed on them. In the app, holders can claim vested coins and creators can withdraw their own proceeds and pool fees; collecting and trading are closed.
 
 ## Venues and infrastructure
 
@@ -57,10 +61,11 @@ The full curated token list is in [Supported Network & Assets](../getting-starte
 
 ## Approvals the app may ask for
 
-| Spender                                                       | Why                                                                                                                                                |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Permit2                                                       | Uniswap v4 swaps and Moment collects (unlimited approval of the token to Permit2, then scoped allowances)                                          |
-| Uniswap SwapRouter02, Monday SwapRouter, Kuru Flow Entrypoint | Exact-amount approvals per swap                                                                                                                    |
-| LaunchAndBuyRouter / curves                                   | Pair-asset approval for developer buys (router) and curve buys (curve); coin approval for curve sells. The launch fee is paid in MON, no approval. |
-| Perpl Exchange                                                | AUSD approval for deposits                                                                                                                         |
-| Aurora deposit addresses                                      | Direct transfers when bridging (no approval)                                                                                                       |
+| Spender                                                       | Why                                                                                                                                                                                   |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Permit2                                                       | Uniswap v4 swaps: an exact approval of the input token to Permit2, then a Permit2 allowance for the Universal Router for that amount, which expires about two minutes after it is set |
+| Uniswap SwapRouter02, Monday SwapRouter, Kuru Flow Entrypoint | Exact-amount approvals per swap                                                                                                                                                       |
+| LaunchAndBuyRouter / curves                                   | Pair-asset approval for developer buys (router) and curve buys (curve); coin approval for curve sells. The launch fee is paid in MON, no approval.                                    |
+| MomentCollect                                                 | An exact USDC approval of what each Moment collect costs                                                                                                                              |
+| Perpl Exchange                                                | AUSD approval for deposits                                                                                                                                                            |
+| Aurora deposit addresses                                      | Direct transfers when bridging (no approval)                                                                                                                                          |

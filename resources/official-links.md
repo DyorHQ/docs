@@ -2,13 +2,14 @@
 
 ## Official links
 
-|               |                                              |
-| ------------- | -------------------------------------------- |
-| Website       | [dyorhq.fun](https://dyorhq.fun)             |
-| X             | [@DyorHQ\_](https://x.com/DyorHQ_)           |
-| Support email | [team@dyorhq.fun](mailto:team@dyorhq.fun)    |
-| Terms of Use  | [dyorhq.fun/terms](https://dyorhq.fun/terms) |
-| Explorer      | [monadscan.com](https://monadscan.com)       |
+|                |                                                  |
+| -------------- | ------------------------------------------------ |
+| Website        | [dyorhq.fun](https://dyorhq.fun)                 |
+| X              | [@DyorHQ\_](https://x.com/DyorHQ_)               |
+| Support email  | [team@dyorhq.fun](mailto:team@dyorhq.fun)        |
+| Terms of Use   | [dyorhq.fun/terms](https://dyorhq.fun/terms)     |
+| Privacy Policy | [dyorhq.fun/privacy](https://dyorhq.fun/privacy) |
+| Explorer       | [monadscan.com](https://monadscan.com)           |
 
 {% hint style="warning" %}
 These are the only official channels. DyorHQ will never DM you first, never ask for your password, recovery phrase or private key, and never ask you to "validate" or "sync" your wallet on a website. Anyone doing so is not DyorHQ.
@@ -25,6 +26,7 @@ These are the only official channels. DyorHQ will never DM you first, never ask 
 | **X · @DyorHQ\_**   | Opens the X profile                                                                                                                                                             |
 | **dyorhq.fun**      | Opens the website                                                                                                                                                               |
 | **Terms of Use**    | Opens dyorhq.fun/terms                                                                                                                                                          |
+| **Privacy Policy**  | Opens dyorhq.fun/privacy                                                                                                                                                        |
 
 The footer reminds you: _"Self-custodial: support can never reach your keys or funds. Never share a recovery phrase with anyone."_
 
