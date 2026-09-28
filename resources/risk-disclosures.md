@@ -31,7 +31,8 @@ DyorHQ is a self-custodial interface to public, permissionless protocols on Mona
 * Launch coins are highly speculative. Most will lose most of their value.
 * The early-buy tax is severe (98% in the first second). Buying in the first seconds without an exemption almost guarantees a loss.
 * The creator sets a creator tax of up to 10% on every curve trade and whether fees go to holders or to themselves. Check **About** before trading.
-* Graduation is not guaranteed. Coins that never graduate stay on their curve. If graduation fails for 7 days the owner can put the launch into refund mode; the app doesn't yet expose refund-mode selling.
+* Graduation is not guaranteed. Coins that never graduate stay on their curve. While a stuck graduation is pending, the coin can't be traded at all. If graduation fails for 7 days the owner can put the launch into refund mode, where the coin's page lets holders sell back into the curve with no fees.
+* In the app, coins still on a previous DyorHQ launchpad's curve can be sold but not bought.
 * Locked liquidity cannot be withdrawn by anyone, which also means it can never be "rescued".
 * Coins paired with aBIL depend on that asset's liquidity on Monday Trade.
 

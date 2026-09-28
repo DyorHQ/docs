@@ -45,3 +45,5 @@ Every trade of a Moment coin costs about **1.5%** in total: a 0.5% LP fee on wha
 ## Buyback-and-LP
 
 The 0.5% buyback share accumulates in USDC. Once the budget is at least 1 USDC and at least an hour has passed since the last run, anyone can tap **Run Buyback** in the Moment's **Pool** section. The sheet shows the **Budget**, **Spends: half on coins, half paired as liquidity**, and an **Impact cap: 1%**. It buys the coin with half the budget and adds coin + USDC to the locked position, so the pool gets **deeper with volume** instead of only decaying. Runs are bounded and MEV-aware; nothing can ever be withdrawn from the position.
+
+On the current Moments contracts, one round adds at most 0.5% of the position's liquidity; what doesn't fit waits in the Moment locker for later rounds and shows in the **Pool** section as **Held for later buyback rounds**. A round is also refused if the pool price moved more than 2% within the block, which the sheet shows as **Price check**.

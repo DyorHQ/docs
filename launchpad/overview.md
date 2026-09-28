@@ -42,21 +42,34 @@ The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aB
 
 * **Graduated**: coins that cleared the threshold, newest first, with a **Graduated** badge.
 * **Explore**: coins still on the curve, sortable by **Newest**, **Market Cap** or **Near Graduation**. Cards at 80%+ show their percentage badge.
+* **Refund & Migrating**: coins in refund mode (holders sell back into the curve) or migrating (nothing trades until they graduate), newest first. Shown only when there are any.
+* Coins from a previous DyorHQ launchpad are listed too, marked **Retired launchpad** (see below).
 * Each card: image, name, $TICKER, market cap in the pair asset, age, and a "N% to graduation" progress bar.
 * **Search coins** by name or symbol. The list polls every 20 seconds.
 * Toolbar: **My Launchpad** (your holdings, launches, claims) and **New Launch**.
 
 ## Lifecycle states
 
-| State           | What it means                                                                                                                |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Bonding**     | Trading on the curve.                                                                                                        |
-| **Migrating**   | A transient state inside the graduating transaction; you won't normally see it. Once the pool exists, trading moves to Swap. |
-| **Graduated**   | Pool is live and locked; trade via Swap.                                                                                     |
-| **Refund mode** | The graduation stayed stuck for 7 days, so DyorHQ reopened the curve for fee-free sells back to it; nothing can be bought.   |
+| State                  | What it means                                                                                                                                                                          |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bonding**            | Trading on the curve.                                                                                                                                                                  |
+| **Graduation pending** | The curve is full but its graduation hasn't gone through yet. Nothing trades until it does; anyone can tap **Retry Graduation** on the coin's page. See [Graduation](graduation.md).   |
+| **Migrating**          | Between the curve and the pool. Normally this happens inside the graduating transaction and you won't see it; if you do, nothing trades until the coin graduates.                      |
+| **Graduated**          | Pool is live and locked; trade via Swap.                                                                                                                                               |
+| **Refund mode**        | The graduation stayed stuck for 7 days, so DyorHQ reopened the curve for fee-free sells back to it; nothing can be bought. The coin's page offers **Sell** only, at the curve's price. |
+
+## Coins from previous launchpads
+
+Coins launched on a previous DyorHQ launchpad keep their pages, charts and history, marked **Retired launchpad**. New coins launch on the current launchpad only (see [Contracts & Addresses](../resources/contracts-and-addresses.md)).
+
+* A coin still on its curve can be **sold but not bought**: its page offers **Sell on the Curve** only, with _"This coin's launchpad is retired: you can sell, but not buy."_ Swap doesn't quote a buy of it either.
+* A coin that already graduated trades both ways on Swap, like any other pool token.
+* Creator fees and holder rewards stay claimable from the coin's page and **My Launchpad**.
 
 ## What the owner can and cannot do
 
 DyorHQ cannot withdraw locked liquidity, touch a curve's reserves, change a live launch's fees, mint tokens or pause trading. The one exception: if a graduation stays stuck for 7 days, DyorHQ can put the curve into refund mode, where holders sell back to it with no fees.
+
+The owner of the current launchpad is a DyorHQ Safe multisig that needs two of its three signers for every action (address in [Contracts & Addresses](../resources/contracts-and-addresses.md)).
 
 Next: [Launch a Coin](launch-a-coin.md), [Trading on the Curve](trading-on-the-curve.md), [Graduation](graduation.md), [Creator Fees & Holder Rewards](fees-and-rewards.md).

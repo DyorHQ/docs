@@ -48,7 +48,7 @@ The profile row at the top opens **Profile**. The footer shows the app version a
 * **Portfolio**: cumulative volume, fees, P\&L and trade counts by product and period, holdings (Assets / NFTs) and full activity. See [Home & Portfolio](../wallet/home-and-portfolio.md).
 * **News**: headlines from CoinDesk, Cointelegraph, Decrypt, The Defiant and The Block, filterable by source, opened in an in-app browser.
 * **Notifications**: everything the app has told you, grouped by day, filterable by kind.
-* **Get Help**: email support, bug report, X, website and Terms of Use. See [Official Links & Support](../resources/official-links.md).
+* **Get Help**: the Help Center (these docs), Getting Started and Risk Disclosures, email support, bug report, X, website, Terms of Use and Privacy Policy. See [Official Links & Support](../resources/official-links.md).
 
 ## Conventions you'll see everywhere
 

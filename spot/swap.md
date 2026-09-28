@@ -40,6 +40,8 @@ You get a "Swap complete" notification, and the swap appears in Swap History, Re
 
 Native MON never needs an approval. Uniswap and Monday routes are searched directly at the deepest fee tiers and through one hop via WMON, USDC, USDT0 or WETH. Uniswap offers the better of its v3 and v4 routes as one quote. Launchpad coins that graduated to Uniswap v4, and graduated coins from the current Moments release, are reached through Uniswap v4; coins that graduated to Monday Trade are quoted by the Monday Trade venue. Moment coins from an earlier Moments release (a past cohort) can't be traded in the app: the token picker hides them, and a pasted address shows "Past cohort · trading closed".
 
+Launchpad coins that are **still on their bonding curve** aren't routed by any venue: they trade on their Launch page. If no venue can route your pair and one side is such a coin, Swap says so under the button and offers **Trade TICKER on its Launch page** (or **Sell TICKER on its Launch page**, or **Find TICKER on the Launch tab** if its launch can't be read just now). If that check fails, it offers **Check Again** and **Open the Launch Tab**. A coin still on the curve of a previous DyorHQ launchpad can be sold but not bought, so Swap never quotes a buy of it (see [Trading on the Curve](../launchpad/trading-on-the-curve.md)).
+
 Swap transactions carry a 10-minute deadline. Kuru Flow quotes are tied to your wallet address and refreshed automatically (Kuru allows one quote per second per address).
 
 ## Errors you might see
@@ -53,5 +55,7 @@ Swap transactions carry a 10-minute deadline. Kuru Flow quotes are tied to your 
 | Insufficient QT                                                                               | Amount exceeds your balance.                                                                                  |
 | Not enough MON to pay for gas.                                                                | Top up MON.                                                                                                   |
 | Past cohort · trading closed. \<address> is a retired Moment coin, so DyorHQ never trades it. | The coin is from an earlier Moments release. Holders can still claim their vested coins on the Moment's page. |
+| This coin's launchpad is retired: you can sell, but not buy.                                  | You tried to buy a coin still on a previous launchpad's curve. Holders can sell it on its Launch page.          |
+| DyorHQ couldn't check this coin's launchpad just now, so buying it isn't offered. Try again in a moment. | DyorHQ couldn't confirm the coin you're buying isn't on a previous launchpad's curve, so no venue was asked. |
 
 Next: [Slippage & Price Impact](slippage-and-price-impact.md) and [Adding Any Monad Token](adding-tokens.md).

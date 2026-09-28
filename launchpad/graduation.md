@@ -22,7 +22,15 @@ The MON and aBIL thresholds were set from those assets' prices when the launchpa
    * **Uniswap v4**: a full-range position in the canonical Uniswap v4 PoolManager on Monad, with the DyorHQ hook attached (that's what charges the 1% pool fee and creator tax). Locked in the DyorHQ **LaunchLocker**.
    * **Monday Trade**: a full-range position in a Monday spot pool at the 1% fee tier. Native-MON coins pair with WMON on Monday. Locked in the DyorHQ **Monday fee vault**.
 3. The position is locked. **Neither locker has a function that removes liquidity**, not for the creator, not for DyorHQ. Only earned fees can ever leave.
-4. The coin's page switches to **Graduated**, shows a **Pool fee** row (1% on either venue; on Uniswap v4 the DyorHQ hook charges it, because the pool's own LP fee is 0%) and a **Swap TICKER on \<VENUE>** button that opens the Swap screen with the pair preselected.
+4. The coin's page switches to **Graduated**, shows a **Pool fee** row (1% on either venue; on Uniswap v4 the DyorHQ hook charges it, because the pool's own LP fee is 0%) and a **Swap TICKER on \<VENUE>** button that opens the Swap screen with the pair preselected. On Uniswap v4 it also shows fees **Waiting for a sweep**, when there are any.
+
+## If graduation gets stuck
+
+If the pool can't be created in the buy that fills the curve, the curve stays full and the coin shows **Graduation pending**. Nothing trades until it graduates: the curve takes no more buys or sells, and there's no pool yet. The coin's page shows **Stuck since** and a **Retry Graduation** button; anyone can retry and pays only the gas.
+
+For a coin that graduates on Monday Trade, DyorHQ's keepers finish the graduation (on the current launchpad, and on previous ones that support it): they retry it on Monday Trade and, if Monday Trade still refuses it, graduate the coin into a locked Uniswap v4 pool instead. On the current launchpad the page shows when this **Uniswap v4 fallback** opens: as soon as the coin is stuck, or, for an aBIL coin, a day later unless DyorHQ allows it sooner. The app itself only offers **Retry Graduation**.
+
+If a graduation is still stuck after 7 days, DyorHQ can put the coin into refund mode: holders sell back into the curve at its price with no fees, and nothing can be bought.
 
 
 
@@ -30,7 +38,7 @@ The MON and aBIL thresholds were set from those assets' prices when the launchpa
 
 <figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-27_16-01-39.png" alt=""><figcaption></figcaption></figure>
 
-The creator picks **Uniswap v4** or **Monday Trade** at launch. aBIL-paired coins can only graduate on Monday Trade (that's where aBIL has liquidity).
+The creator picks **Uniswap v4** or **Monday Trade** at launch. aBIL-paired coins can only graduate on Monday Trade (that's where aBIL has liquidity), unless a stuck graduation moves them to Uniswap v4 (see above).
 
 ## Trading after graduation
 
