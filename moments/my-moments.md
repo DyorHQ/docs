@@ -34,7 +34,7 @@ They are not counted in the tiles or in Claim All, and they don't appear under *
 * **Portfolio → My Holdings → NFTs**: your editions as "Moment · OpenSea" tiles.
 * **Portfolio → Moments**: volume, fees and activity ("Collected …", "Published …", "Withdrew proceeds", "Withdrew pool fees").
 * **OpenSea**: every edition, at `opensea.io/item/monad/<NFT contract>/<edition>`.
-* **Moment link**: the share button on a Moment page shares the Moment's own link (`dyorhq.fun/moments/<name>`), with the Moment's name and artwork as the preview. The link opens the Moment in the DyorHQ app.
+* **Moment link**: the share button on a Moment page shares the Moment's own link (`dyorhq.fun/moments/<name>`), and your share sheet previews it with the Moment's name and artwork. With the DyorHQ app installed, the link opens the Moment in the app; otherwise it opens the website's Moments page.
 
 ## Editions on other wallets
 

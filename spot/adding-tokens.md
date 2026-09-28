@@ -1,6 +1,6 @@
 # 🔎 Adding Any Monad Token
 
-The Swap picker starts with the curated Monad token list, but any ERC-20 on Monad can be swapped.
+The Swap picker starts with the curated Monad token list, but any ERC-20 on Monad can be swapped, except coins from past Moments cohorts.
 
 ## The token picker
 
@@ -16,7 +16,7 @@ If nothing matches you'll see: _"No token matches. Paste a contract address to a
 
 Tokens you pick in the Swap picker or swap into are remembered for your wallet and show up in the Swap picker, Home holdings and price alerts.
 
-Tokens the app finds in your wallet's history that you didn't choose in DyorHQ are marked **Unverified**. They show that mark in your holdings. They stay out of the Swap picker's list and appear only when a search matches them, in an **Unverified — in your wallet** section with a warning. Completing a swap into one clears the mark.
+Other tokens the app finds in your wallet's history are marked **Unverified**, including coins you bought on the Launchpad or claimed from a Moment. They show that mark in your holdings. They stay out of the Swap picker's list and appear only when a search matches them, in an **Unverified — in your wallet** section with a warning. Completing a swap into one clears the mark.
 
 ## Coins from the Launchpad and Moments
 

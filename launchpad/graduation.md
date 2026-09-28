@@ -13,7 +13,7 @@ The curve tracks how much of the pair asset it has raised (net of fees). When a 
 | AUSD       | 4,324.56 AUSD                                                        |
 | aBIL       | $4,324.56 worth of aBIL at the price when the launchpad was deployed |
 
-The MON and aBIL thresholds are fixed when the launchpad is deployed; the coin page shows each coin's own threshold ("Graduates at X \<PAIR> raised").
+The MON and aBIL thresholds were set from those assets' prices when the launchpad was deployed, and each coin keeps the threshold it launched with. The coin page shows it ("Graduates at X \<PAIR> raised").
 
 ## What happens at graduation
 

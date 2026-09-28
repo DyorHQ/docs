@@ -40,7 +40,7 @@ The app ships with Monad's official token list (mainnet v2.48). These appear in 
 | ezETH  | Renzo Restaked ETH                      | `0x2416092f143378750bb29b79eD961ab195CcEea5` |
 | rETH   | Rocket Pool ETH                         | `0xC50f2e735eDd9dCD8Ccd41EcFE9894E679e3195f` |
 
-**Any other ERC-20 on Monad** can be added by pasting its contract address in the Swap picker. See [Adding Any Monad Token](../spot/adding-tokens.md). Tokens you launch, buy on the Launchpad, or receive from a graduated Moment are added to your wallet's list automatically.
+**Any other ERC-20 on Monad** can be added by pasting its contract address in the Swap picker. See [Adding Any Monad Token](../spot/adding-tokens.md). Tokens you pick or swap into in Swap are remembered for your wallet. Other tokens the app finds in your wallet, including coins bought on the Launchpad or claimed from a Moment, show in your holdings marked **Unverified**.
 
 ## Assets by product
 

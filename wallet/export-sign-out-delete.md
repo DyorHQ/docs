@@ -15,7 +15,7 @@ The screen's warnings are worth repeating:
 
 ### Apple and Google accounts
 
-Key export isn't available for these wallets yet; the screen reads _"Key export for this wallet type isn't set up in this build yet."_ To move your funds, send them to another wallet.
+Key export isn't available for these wallets; the screen reads _"Key export for this wallet type isn't set up in this build yet."_ To move your funds, send them to another wallet.
 
 ### Passkey accounts
 
@@ -56,6 +56,7 @@ Signing out also forgets the Perpl trading session and social session for that w
 * Notification history and this device's push registration
 * Every key, session and cache stored on this device
 * For Email & Password wallets: the email link, so the same email and password won't log back into a deleted account
+* For Email & Password wallets: the Privy account that verified your email, unless it's also another way into DyorHQ
 * For Apple and Google accounts: your sign-in account at Privy, including its embedded wallet
 * For passkey accounts: your passkey (DyorHQ asks your passkey app to remove it)
 
@@ -65,16 +66,16 @@ _Transactions, tokens and Moments you created stay on the Monad blockchain, noth
 
 **Your funds are not touched on-chain**, but for Apple/Google and passkey accounts, deleting also deletes the wallet's only key. Whether you can reach your funds again depends on your own backup:
 
-| Wallet type      | The app's warning                                                                                                                                                                                                                                                           |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Email & Password | _This wallet is recreated from your email and password. Removing it deletes the device copy; keep your email and password, the only way back to the funds. A password reset can't bring them back: it creates a new, empty wallet._                                         |
-| Apple / Google   | _Your embedded wallet is deleted together with the Privy account. Send your funds elsewhere or export the wallet's key first; afterwards nobody can recover it._ Key export isn't available for these accounts yet, so send your funds to another wallet before you delete. |
-| Passkey          | _Deleting removes your passkey, which is this wallet's only key. Assume this is permanent unless you export the recovery phrase first._ The screen offers **Export Recovery Phrase** and **Move Funds Out** before you delete.                                              |
-| Imported         | _This wallet's private key is removed from this device. Keep its recovery phrase or key somewhere safe; it is the only way back to the funds._                                                                                                                              |
+| Wallet type      | The app's warning                                                                                                                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Email & Password | _This wallet is recreated from your email and password. Removing it deletes the device copy; keep your email and password, the only way back to the funds. A password reset can't bring them back: it creates a new, empty wallet._                                     |
+| Apple / Google   | _Your embedded wallet is deleted together with the Privy account. Send your funds elsewhere or export the wallet's key first; afterwards nobody can recover it._ Key export isn't available for these accounts, so send your funds to another wallet before you delete. |
+| Passkey          | _Deleting removes your passkey, which is this wallet's only key. Assume this is permanent unless you export the recovery phrase first._ The screen offers **Export Recovery Phrase** and **Move Funds Out** before you delete.                                          |
+| Imported         | _This wallet's private key is removed from this device. Keep its recovery phrase or key somewhere safe; it is the only way back to the funds._                                                                                                                          |
 
 ### Steps
 
 1. Read the list and turn on **"I understand only my own backup can recover my funds"**. Passkey accounts instead export and confirm the recovery phrase, or turn on **"I understand I may permanently lose these funds"**.
 2. Type **DELETE** in the confirmation field.
 3. Tap **Delete Account**. With Require Face ID on, confirm with Face ID first. Your wallet signs one message so the server can verify it's you, then everything above is removed. _This cannot be undone._
-   * Passkey accounts tap **Delete with Face ID** instead. Face ID confirms it's your passkey; your data on the server is deleted first, then the passkey is removed and this iPhone is cleared.
+   * Passkey accounts tap **Delete with Face ID** instead. Face ID confirms it's your passkey. Your data on the server is deleted first; then DyorHQ asks your passkey app to remove the passkey and clears this iPhone. If the passkey may still be there (on iOS 18, in another password manager, or on another phone), the last screen lists the steps to delete it yourself.

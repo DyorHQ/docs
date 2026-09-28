@@ -41,7 +41,7 @@ Once verified, your wallet is created and you're signed in. The code proves the 
 
 ### Log In
 
-Switch to **Log In**, enter the same email and password, tap **Log In**. Usually no code is needed: your wallet is recreated on this iPhone and, if it matches a verified sign-up, you're in. If the app asks you to verify your email, tap **Verify Email** and enter the 6-digit code we email you; you're logged in right after. Signed up before September 24, 2026? Tap **Check for an Older Account** when it appears.
+Switch to **Log In**, enter the same email and password, tap **Log In**. Usually no code is needed: your wallet is recreated on this iPhone and, if it matches a verified sign-up, you're in. If the app asks you to verify your email, tap **Verify Email** and enter the 6-digit code we email you; you're logged in right after. Signed up before September 24, 2026? Tap **Check for an Older Account** when it appears. The app then has you choose a new password and enter an emailed code; your account moves to the new wallet that password creates, and your earlier wallet stays at its address. If the earlier wallet still holds funds, the app first has you log in to it and send them to a wallet you control.
 
 If you see "We couldn't find a verified account for that email and password", either the password is different (which means a different wallet) or that email never completed sign-up.
 
@@ -55,7 +55,7 @@ Tap **Forgot password?** on the Log In screen, enter your email and a **new** pa
 
 ## Apple or Google
 
-Tap **Continue with Apple** or **Continue with Google** and finish the sign-in in the sheet that opens. Your wallet is a Privy embedded wallet secured by that sign-in, and the same sign-in opens it on any device. Key export isn't available for these wallets yet; see [Export, Sign Out & Delete Account](../wallet/export-sign-out-delete.md).
+Tap **Continue with Apple** or **Continue with Google** and finish the sign-in in the sheet that opens. Your wallet is a Privy embedded wallet secured by that sign-in, and the same sign-in opens it on any device. Key export isn't available for these wallets; see [Export, Sign Out & Delete Account](../wallet/export-sign-out-delete.md).
 
 ## Passkey
 

@@ -11,7 +11,7 @@ DyorHQ runs on **Monad mainnet**. To do anything beyond watching, your wallet ne
 | **AUSD** | Perps collateral, Launchpad pair asset          | Perpl's collateral. First deposit is at least 10 AUSD. If you hold MON but no AUSD, the Transfer sheet can swap MON → AUSD for you on the way in.                                             |
 | **aBIL** | Launchpad pair asset (tokenized T-bill stock)   | Coins paired with aBIL graduate on Monday Trade.                                                                                                                                              |
 
-Any other Monad token works for swapping.
+Other Monad tokens work for swapping, except coins from past Moments cohorts.
 
 ## Your receive address
 
