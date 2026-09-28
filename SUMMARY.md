@@ -61,6 +61,5 @@
 
 * [Contracts & Addresses](resources/contracts-and-addresses.md)
 * [Risk Disclosures](resources/risk-disclosures.md)
-* [FAQ](resources/faq.md)
 * [Glossary](resources/glossary.md)
 * [Official Links & Support](resources/official-links.md)

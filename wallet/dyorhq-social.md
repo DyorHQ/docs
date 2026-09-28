@@ -4,24 +4,22 @@ DyorHQ Social is your public identity inside the app: a handle, display name, bi
 
 **Where:** Profile → **DyorHQ Social**.
 
-{% hint style="info" %}
-📸 **Screenshot here:** DyorHQ Social screen with avatar, handle, display name and bio filled in. Suggested file: `.gitbook/assets/58-social.png`
-{% endhint %}
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-28_09-49-46.png" alt=""><figcaption></figcaption></figure>
 
 ## Connecting
 
-Any wallet that can sign connects automatically the first time you sign in: the app asks your wallet to sign a short message (no transaction, no fee) and that signature opens a session with DyorHQ's backend. If you ever see **Connect to DyorHQ Social**, tap it; the footer explains: *"You'll sign a short message with your wallet to prove it's you — no transaction, no fees."*
+Any wallet that can sign connects automatically the first time you sign in: the app asks your wallet to sign a short message (no transaction, no fee) and that signature opens a session with DyorHQ's backend. If you ever see **Connect to DyorHQ Social**, tap it; the footer explains: _"You'll sign a short message with your wallet to prove it's you — no transaction, no fees."_
 
-Watch-only sessions can't connect: *"Sign in with a wallet to join DyorHQ social."*
+Watch-only sessions can't connect: _"Sign in with a wallet to join DyorHQ social."_
 
 ## Your profile
 
-| Field | Rule |
-| --- | --- |
-| **Photo** | Add Photo / Change Photo. A square image works best; it's resized to 512 px. |
-| **Handle** (@) | Lowercase letters, numbers and underscores, 3–20 characters. |
-| **Display name** | Free text. |
-| **Bio** | A few lines. |
+| Field            | Rule                                                                         |
+| ---------------- | ---------------------------------------------------------------------------- |
+| **Photo**        | Add Photo / Change Photo. A square image works best; it's resized to 512 px. |
+| **Handle** (@)   | Lowercase letters, numbers and underscores, 3–20 characters.                 |
+| **Display name** | Free text.                                                                   |
+| **Bio**          | A few lines.                                                                 |
 
 Tap **Save Profile**. "Saved to DyorHQ." confirms it.
 
