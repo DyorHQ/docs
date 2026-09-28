@@ -14,7 +14,7 @@ DyorHQ is an interface to public protocols on Monad. This page lists every integ
 | Moments graduation   | **Uniswap v4**                                           | coin/USDC pool, locked forever                                                                    |
 | Moments NFTs         | **OpenSea**                                              | Every Moment edition renders and is tradable on OpenSea (Monad)                                   |
 | Bridging             | **Aurora Intents**                                       | Cross-chain deposits to and from Monad                                                            |
-| Charts               | **TradingView Lightweight Charts**                       | Perps candles, bundled offline                                                                    |
+| Charts               | **TradingView**                                          | Perps candles, bundled offline                                                                    |
 | News                 | CoinDesk, Cointelegraph, Decrypt, The Defiant, The Block | Public RSS feeds                                                                                  |
 | Explorer             | **Monadscan**                                            | Every "View" link                                                                                 |
 
@@ -24,7 +24,7 @@ DyorHQ is an interface to public protocols on Monad. This page lists every integ
 
 | Fee               | Amount                                                                                                                                                                                                                                                                     |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DyorHQ fee        | **None.** DyorHQ adds no fee or referral markup on swaps.                                                                                                                                                                                                                  |
+| DyorHQ fee        | **None.** DyorHQ adds no fee on swaps.                                                                                                                                                                                                                                     |
 | Venue pool fee    | The pool's own tier, shown in the route (e.g. "v3 · MON → USDC · 0.05%"). Uniswap tiers 0.01% / 0.05% / 0.3% / 1%; Monday tiers 0.01% / 0.03% / 0.05% / 0.3% / 1%. Kuru Flow returns a net output, so anything Kuru charges is already reflected in the quote you compare. |
 | Moment coin pools | 1.5% all-in (see Moments below)                                                                                                                                                                                                                                            |
 | MON ↔ WMON wrap   | None (1:1)                                                                                                                                                                                                                                                                 |
@@ -52,13 +52,12 @@ DyorHQ is an interface to public protocols on Monad. This page lists every integ
 
 ### Moments
 
-| Fee                                      | Amount                                                                                                                                    | Who receives it                                                               |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Publishing                               | **Free.** Gas only.                                                                                                                       | —                                                                             |
-| Collecting                               | The creator's collect price (minimum **$0.10**) per edition, paid in USDC                                                                 | **75%** to the Moment's reserve, **20%** to the creator, **5%** to DyorHQ     |
-| Trading the coin after graduation        | About **1.5%** per trade: **0.5%** pool LP fee on the input (accrues to the locked position) + **1%** of the USDC leg via the DyorHQ hook | Hook fee, in USDC: **0.2%** creator, **0.3%** DyorHQ, **0.5%** buyback-and-LP |
-| NFT royalty                              | **5%** (ERC-2981), when marketplaces honour it                                                                                            | Creator                                                                       |
-| Expiry (window closes before graduation) | Reserve is split **70%** creator / **30%** DyorHQ treasury                                                                                | —                                                                             |
+| Fee                               | Amount                                                                                                                                    | Who receives it                                                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Publishing                        | **Free.** Gas only.                                                                                                                       | —                                                                             |
+| Collecting                        | The creator's collect price (minimum **$0.10**) per edition, paid in USDC                                                                 | **75%** to the Moment's reserve, **20%** to the creator, **5%** to DyorHQ     |
+| Trading the coin after graduation | About **1.5%** per trade: **0.5%** pool LP fee on the input (accrues to the locked position) + **1%** of the USDC leg via the DyorHQ hook | Hook fee, in USDC: **0.2%** creator, **0.3%** DyorHQ, **0.5%** buyback-and-LP |
+| NFT royalty                       | **5%** (ERC-2981), when marketplaces honour it                                                                                            | Creator                                                                       |
 
 ### Bridge
 

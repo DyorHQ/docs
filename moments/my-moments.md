@@ -2,7 +2,7 @@
 
 Everything you've collected or published, with your coins by vesting stage.
 
-**Where:** Moments tab → **My Moments** (the person icon).
+**Where:** Moments tab → **My Moments**&#x20;
 
 ## Tiles
 
