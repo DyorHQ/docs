@@ -37,7 +37,7 @@ Each launched coin has its own token and curve contracts; the token address is s
 | Platform wallet (DyorHQ fees)                | `0x15ED3bb488231213b141A2f78b62358D52235Cd7` |
 | Treasury wallet                              | `0x5aDbDc19831D0f9dbdfBbA6ee3d618DbB9CEA371` |
 
-Each Moment has its own coin (ERC-20) and NFT (ERC-721) contracts, shown under **About this Moment**. The NFT's `external_url` points to `https://dyorhq.fun/moments/c4/<id>`; with the DyorHQ app installed it opens the Moment in the app, as its name link does. The guardian can only pause publishing and cancel a queued policy change. The platform and treasury wallets are the ones the **Publish** sheet shows; each Moment keeps the wallets it was published with.
+Each Moment has its own coin (ERC-20) and NFT (ERC-721) contracts, shown under **About this Moment**. The NFT's `external_url` points to `https://dyorhq.fun/moments/c4/<id>`; with the DyorHQ app installed it opens the Moment in the app, as its name link does. The guardian can pause and unpause publishing, cancel a queued policy change and hand its role on; it can't move funds or change a published Moment. The platform and treasury wallets are the ones the **Publish** sheet shows; each Moment keeps the wallets it was published with.
 
 ## Previous releases
 

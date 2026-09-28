@@ -60,7 +60,7 @@ The USDC and AUSD thresholds are exactly $2,000 × (√10 − 1). The MON and aB
 
 ## Coins from previous launchpads
 
-Coins launched on a previous DyorHQ launchpad keep their pages, charts and history, marked **Retired launchpad**. New coins launch on the current launchpad only (see [Contracts & Addresses](../resources/contracts-and-addresses.md)).
+Coins launched on a previous DyorHQ launchpad keep their pages, charts and history, marked **Retired launchpad**. The app launches new coins on the current launchpad only (see [Contracts & Addresses](../resources/contracts-and-addresses.md)), but the previous launchpad contracts stay on chain: a coin launched there, for example from an older app version, is marked **Retired launchpad** too and is sell-only in the app.
 
 * A coin still on its curve can be **sold but not bought**: its page offers **Sell on the Curve** only, with _"This coin's launchpad is retired: you can sell, but not buy."_ Swap doesn't quote a buy of it either.
 * A coin that already graduated trades both ways on Swap, like any other pool token.

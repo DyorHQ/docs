@@ -20,17 +20,18 @@ These are the only official channels. DyorHQ will never DM you first, never ask 
 
 **Where:** side menu → **Get Help**, or Profile → **Support**.
 
-| Row                 | Does                                                                                                                                                                            |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Help Center**     | Opens these docs ("Guides to every part of DyorHQ")                                                                                                                             |
-| **Getting Started** | Opens [Quickstart](../getting-started/quickstart.md) ("From sign-in to your first trade")                                                                                       |
-| **Risk Disclosures** | Opens [Risk Disclosures](risk-disclosures.md) ("Read these before you trade")                                                                                                  |
-| **Contact Support** | Emails team@dyorhq.fun with the subject "DyorHQ support"                                                                                                                        |
-| **Report a Bug**    | Emails team@dyorhq.fun with a template (what happened, what you expected, steps to reproduce); your app version, build, iOS version and device model are appended automatically |
-| **X · @DyorHQ\_**   | Opens the X profile                                                                                                                                                             |
-| **dyorhq.fun**      | Opens the website                                                                                                                                                               |
-| **Terms of Use**    | Opens dyorhq.fun/terms                                                                                                                                                          |
-| **Privacy Policy**  | Opens dyorhq.fun/privacy                                                                                                                                                        |
+| Row                       | Does                                                                                                                                                                            |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Help Center**           | Opens these docs ("Guides to every part of DyorHQ")                                                                                                                             |
+| **Getting Started**       | Opens [Quickstart](../getting-started/quickstart.md) ("From sign-in to your first trade")                                                                                       |
+| **Risk Disclosures**      | Opens [Risk Disclosures](risk-disclosures.md) ("Read these before you trade")                                                                                                   |
+| **Contracts & Addresses** | Opens [Contracts & Addresses](contracts-and-addresses.md) ("Verify every contract DyorHQ uses")                                                                                 |
+| **Contact Support**       | Emails team@dyorhq.fun with the subject "DyorHQ support"                                                                                                                        |
+| **Report a Bug**          | Emails team@dyorhq.fun with a template (what happened, what you expected, steps to reproduce); your app version, build, iOS version and device model are appended automatically |
+| **X · @DyorHQ\_**         | Opens the X profile                                                                                                                                                             |
+| **dyorhq.fun**            | Opens the website                                                                                                                                                               |
+| **Terms of Use**          | Opens dyorhq.fun/terms                                                                                                                                                          |
+| **Privacy Policy**        | Opens dyorhq.fun/privacy                                                                                                                                                        |
 
 The footer reminds you: _"Self-custodial: support can never reach your keys or funds. Never share a recovery phrase with anyone."_
 

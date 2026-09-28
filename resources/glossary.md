@@ -34,7 +34,7 @@
 
 **Graduation** — The moment a Launchpad coin or a Moment coin leaves its curve or collect phase and gets a locked liquidity pool.
 
-**Graduation pending** — A Launchpad coin whose curve is full but whose graduation hasn't gone through yet. Nothing trades until it graduates; anyone can retry it.
+**Graduation pending** — A Launchpad coin whose curve is full, or a Moment whose reserve reached its threshold, but whose pool hasn't been created yet. Nothing trades until it graduates; anyone can retry it.
 
 **Hook** — A Uniswap v4 contract attached to a pool. DyorHQ's hooks charge the Launchpad pool fee and the Moments 1% fee.
 
@@ -68,9 +68,9 @@
 
 **Refund mode** — A Launchpad state the owner can trigger after 7 days of failed graduations: buys close, sells are fee-free.
 
-**Retired launchpad** — A previous DyorHQ launchpad release. Its coins keep their pages in the app; those still on a curve can be sold but not bought, and graduated ones trade on Swap.
-
 **Reserve** — 75% of every Moment collect, held until graduation seeds the pool (or expiry splits it).
+
+**Retired launchpad** — A previous DyorHQ launchpad release. Its coins keep their pages in the app; those still on a curve can be sold but not bought, and graduated ones trade on Swap.
 
 **Slippage tolerance** — The maximum the price may move against you before a swap or market order cancels.
 
