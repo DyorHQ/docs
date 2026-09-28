@@ -19,7 +19,7 @@
 
 * [🔄 Swap](spot/swap.md)
 * [📉 Slippage & Price Impact](spot/slippage-and-price-impact.md)
-* [➕ Adding Any Monad Token](spot/adding-tokens.md)
+* [🔎 Adding Any Monad Token](spot/adding-tokens.md)
 
 ## 📈 Perpetuals
 
