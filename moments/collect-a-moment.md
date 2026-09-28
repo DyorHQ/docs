@@ -1,4 +1,4 @@
-# Collect a Moment
+# 🛍️ Collect a Moment
 
 Collecting mints you an NFT edition of the Moment and, if the Moment ever graduates, a claim on its coin.
 

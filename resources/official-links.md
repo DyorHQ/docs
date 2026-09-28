@@ -1,4 +1,4 @@
-# Official Links & Support
+# 🔗 Official Links & Support
 
 ## Official links
 

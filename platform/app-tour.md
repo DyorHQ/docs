@@ -1,4 +1,4 @@
-# App Tour
+# 🧭 App Tour
 
 A map of every screen in DyorHQ so you always know where you are.
 

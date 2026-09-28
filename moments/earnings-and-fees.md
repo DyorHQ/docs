@@ -1,4 +1,4 @@
-# Earnings, Fees & Buybacks
+# 💵 Earnings, Fees & Buybacks
 
 ## Creator earnings
 

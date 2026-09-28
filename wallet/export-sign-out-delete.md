@@ -1,4 +1,4 @@
-# Export, Sign Out & Delete Account
+# 🚪 Export, Sign Out & Delete Account
 
 ## Export your wallet
 

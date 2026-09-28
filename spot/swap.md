@@ -1,4 +1,4 @@
-# Swap
+# 🔄 Swap
 
 Swap any Monad token from your own wallet. DyorHQ quotes **Kuru Flow**, **Uniswap** (v3 and v4) and **Monday Trade** at the same time, ranks them by what you receive, and executes the one you pick through that venue's own router. No DyorHQ contract sits in the path and DyorHQ charges no fee.
 

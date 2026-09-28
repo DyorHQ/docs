@@ -1,4 +1,4 @@
-# One-Click Trading
+# 👆 One-Click Trading
 
 Plain orders go straight to Perpl's exchange contract as on-chain transactions from your wallet. **One-Click Trading** adds a second path: a trading key generated on your iPhone, authorised once by your wallet, that lets Perpl's keeper forward your signed orders. It unlocks several features.
 

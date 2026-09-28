@@ -1,4 +1,4 @@
-# Profile & Settings
+# ⚙️ Profile & Settings
 
 **Where:** tap your avatar on Home, or the profile row at the top of the side menu.
 

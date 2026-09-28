@@ -1,4 +1,4 @@
-# My Moments
+# 🗃️ My Moments
 
 Everything you've collected or published, with your coins by vesting stage.
 
@@ -27,7 +27,7 @@ Empty state: _"Collect a Moment and it shows up here with its editions and coins
 * **Home** hero card: the **Moments** value (held and owed coins at the pool price; pre-graduation entitlements count as zero).
 * **Portfolio → My Holdings → NFTs**: your editions as "Moment · OpenSea" tiles.
 * **Portfolio → Moments**: volume, fees and activity ("Collected …", "Published …", "Withdrew proceeds", "Withdrew pool fees").
-* **OpenSea**: every edition, at `opensea.io/item/monad/<NFT contract>/<edition>`. The share button on a Moment page shares the collection link with the message _"\<name> — a Moment on Monad, kept forever. Collect it on DyorHQ, The RWA HQ for social trading."_
+* **OpenSea**: every edition, at `opensea.io/item/monad/<NFT contract>/<edition>`. The share button on a Moment page shares the collection link with the message _"\<name> — a Moment on Monad, kept forever. Collect it on DyorHQ, Monad in your pocket."_
 
 ## Editions on other wallets
 

@@ -1,4 +1,4 @@
-# Quickstart (Onboarding)
+# ⚡ Quickstart (Onboarding)
 
 This is the fastest path from zero to your first trade on DyorHQ. It takes about five minutes once you have the app.
 

@@ -1,4 +1,4 @@
-# Graduation
+# 🎓 Graduation
 
 Graduation is the moment a coin leaves its bonding curve and becomes a normal token with a permanently locked liquidity pool.
 

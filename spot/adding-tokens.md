@@ -1,4 +1,4 @@
-# Adding Any Monad Token
+# ➕ Adding Any Monad Token
 
 The Swap picker starts with the curated Monad token list, but any ERC-20 on Monad can be swapped.
 

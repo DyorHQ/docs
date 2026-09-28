@@ -1,4 +1,4 @@
-# Create Your Account
+# 👤 Create Your Account
 
 DyorHQ has no "account" in the usual sense. What you create is a **wallet on your iPhone**, and the app is built around it. Three ways in are live today.
 

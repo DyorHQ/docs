@@ -1,4 +1,4 @@
-# Creator Fees & Holder Rewards
+# 💸 Creator Fees & Holder Rewards
 
 Every launch chooses one of two fee modes at creation, and it can't be changed afterwards.
 

@@ -1,4 +1,4 @@
-# Supported Network & Assets
+# 🌐 Supported Network & Assets
 
 ## Network
 

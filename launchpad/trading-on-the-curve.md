@@ -1,4 +1,4 @@
-# Trading on the Curve
+# 🎢 Trading on the Curve
 
 Tap any coin on the Launch tab to open its page. While the coin is **Bonding**, you buy and sell directly on its curve here (not in Swap).
 

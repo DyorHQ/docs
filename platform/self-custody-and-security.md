@@ -1,4 +1,4 @@
-# Self-Custody & Security
+# 🔐 Self-Custody & Security
 
 DyorHQ is non-custodial end to end. This page explains what that means in practice and the protections built into the app.
 

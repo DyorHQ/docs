@@ -1,4 +1,4 @@
-# DyorHQ Social
+# 💬 DyorHQ Social
 
 DyorHQ Social is your public identity inside the app: a handle, display name, bio and photo attached to your wallet. It's what other people see on your Launchpad and Moments profiles, and it's what lets you upload images for coins and Moments.
 

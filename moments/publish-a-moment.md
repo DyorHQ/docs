@@ -1,4 +1,4 @@
-# Publish a Moment
+# 📤 Publish a Moment
 
 **Where:** Moments tab → **Publish** (the + button). You need a wallet that can sign and a little MON for gas. Publishing itself is free.
 

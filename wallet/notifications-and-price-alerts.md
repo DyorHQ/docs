@@ -1,4 +1,4 @@
-# Notifications & Price Alerts
+# 🔔 Notifications & Price Alerts
 
 DyorHQ keeps you posted with iPhone notifications and an in-app notification center. Everything is generated on your device; there's no server watching your wallet.
 

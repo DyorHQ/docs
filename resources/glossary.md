@@ -1,4 +1,4 @@
-# Glossary
+# 📖 Glossary
 
 **aBIL** — Anchored's tokenized SPDR 1-3M T-Bill "aStock" on Monad. A transferable ERC-20 with liquidity on Monday Trade. One of the Launchpad's pair assets.
 

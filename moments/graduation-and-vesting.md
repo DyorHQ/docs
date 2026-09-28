@@ -1,4 +1,4 @@
-# Graduation & Vesting
+# ⏳ Graduation & Vesting
 
 ## When a Moment graduates
 

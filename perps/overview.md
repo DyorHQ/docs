@@ -1,4 +1,4 @@
-# Perps Overview
+# 📊 Perps Overview
 
 DyorHQ trades perpetual futures on **Perpl Trade**, the fully on-chain perpetuals order book on Monad. Your wallet talks to Perpl's exchange contract directly: your collateral sits in your own Perpl account, and every order is signed by you.
 

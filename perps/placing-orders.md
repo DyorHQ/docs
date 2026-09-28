@@ -1,4 +1,4 @@
-# Placing Orders
+# 📝 Placing Orders
 
 **Where:** Trade tab → Perps → **Trade** view.
 

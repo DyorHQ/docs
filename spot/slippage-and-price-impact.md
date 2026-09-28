@@ -1,4 +1,4 @@
-# Slippage & Price Impact
+# 📉 Slippage & Price Impact
 
 Two different things protect you on a swap. **Slippage tolerance** is your limit; **price impact** is a measurement.
 

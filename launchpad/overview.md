@@ -1,4 +1,4 @@
-# Overview
+# 🪙 Overview
 
 The DyorHQ Launchpad is a fair-launch bonding curve on Monad. Anyone can launch a coin, anyone can trade it on the curve, and when the curve raises its target the liquidity moves into a pool that is **locked forever**. The twist: a coin can be paired with **MON, USDC, AUSD or aBIL**, a tokenized T-bill stock, which is what "launching a memecoin paired with a tokenized RWA" means in practice.
 

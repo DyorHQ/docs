@@ -1,4 +1,4 @@
-# Contracts & Addresses
+# 📜 Contracts & Addresses
 
 Everything DyorHQ touches on Monad mainnet (chain ID 143). DyorHQ's own contracts are immutable (no proxies) and source-verified. Always confirm an address here or on [monadscan.com](https://monadscan.com) before interacting with it outside the app.
 

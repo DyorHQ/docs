@@ -1,4 +1,4 @@
-# Launch a Coin
+# 🚀 Launch a Coin
 
 **Where:** Launch tab → **New Launch** (the + button). You need a wallet that can sign, at least **5 MON** for the launch fee plus gas, and a little more if you add a developer buy.
 

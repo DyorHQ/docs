@@ -1,4 +1,4 @@
-# Integrations & Fees
+# 🧩 Integrations & Fees
 
 DyorHQ is an interface to public protocols on Monad. This page lists every integration and every fee you can meet in the app. All values below are read live from the contracts by the app; if a policy changes for future launches or Moments, the app shows the new number.
 

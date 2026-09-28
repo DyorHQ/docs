@@ -1,11 +1,11 @@
-# Risk Disclosures
+# ⚠️ Risk Disclosures
 
 DyorHQ is a self-custodial interface to public, permissionless protocols on Monad. Using it involves real risk of loss. Please read this page before you trade, launch, publish or collect.
 
 ## General
 
 * **Self-custody means self-responsibility.** DyorHQ cannot recover a lost password, phrase or key, reverse a transaction, or freeze funds. See [Self-Custody & Security](../platform/self-custody-and-security.md).
-* **Nothing here is investment advice.** Prices, charts, "Top Tokens", holder counts and P&L are information, not recommendations.
+* **Nothing here is investment advice.** Prices, charts, "Top Tokens", holder counts and P\&L are information, not recommendations.
 * **Early access.** The app is in early access. Expect rough edges, and never put in more than you can afford to lose.
 * **Third-party protocols.** Swaps, perps and bridging run on contracts DyorHQ does not control (Uniswap, Monday Trade, Kuru, Perpl, Aurora). Their availability, fees and behaviour can change.
 * **Smart contract risk.** Contracts can have bugs. Both the Launchpad and the Moments contracts have had internal security reviews with proof-of-concept, fuzz, invariant and fork testing, and the Launchpad was redeployed with its fixes. No independent audit has been completed yet; one is planned after the Moments validation launch.
@@ -50,6 +50,6 @@ DyorHQ is a self-custodial interface to public, permissionless protocols on Mona
 
 Cross-chain transfers are settled by Aurora Intents and can be delayed or refunded. Never bridge more than you can wait for.
 
----
+***
 
 By using DyorHQ you accept the [Terms of Use](https://dyorhq.fun/terms).

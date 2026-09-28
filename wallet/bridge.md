@@ -1,4 +1,4 @@
-# Bridge
+# 🌉 Bridge
 
 DyorHQ's bridge is powered by **Aurora Intents** (NEAR Intents). You send on one chain, Aurora settles across chains, and the funds arrive in your DyorHQ wallet on Monad, or the other way round.
 

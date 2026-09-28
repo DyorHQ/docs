@@ -1,4 +1,4 @@
-# Fund Your Wallet
+# 💰 Fund Your Wallet
 
 DyorHQ runs on **Monad mainnet**. To do anything beyond watching, your wallet needs a little MON and whatever asset you want to trade with.
 

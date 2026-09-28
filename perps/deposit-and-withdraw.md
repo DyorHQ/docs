@@ -1,4 +1,4 @@
-# Deposit & Withdraw Collateral
+# 🏦 Deposit & Withdraw Collateral
 
 Perpl uses **AUSD** as collateral. Your collateral lives in your own Perpl account inside the exchange contract, separate from your spot balance. There are two places to move it.
 

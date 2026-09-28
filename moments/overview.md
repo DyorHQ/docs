@@ -1,4 +1,4 @@
-# Moments Overview
+# 🖼️ Moments Overview
 
 **Make your favorite moments last forever.** A Moment is a photo or video from real life, published on Monad as an NFT. People collect editions of it for USDC. If enough is collected, the Moment's own coin **graduates** into a live, permanently locked Uniswap v4 market, and everyone who collected gets coins.
 

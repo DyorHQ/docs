@@ -1,4 +1,4 @@
-# My Launchpad
+# 🗂️ My Launchpad
 
 Your personal Launchpad dashboard: what you hold, what you launched, what you can claim.
 

@@ -1,4 +1,4 @@
-# Home & Portfolio
+# 🏠 Home & Portfolio
 
 ## Home
 

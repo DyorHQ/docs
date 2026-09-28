@@ -1,4 +1,4 @@
-# Managing Positions
+# 🎛️ Managing Positions
 
 Below the chart or ticket, four tabs track everything for the selected market: **Positions**, **Orders**, **Assets** and **Trade History**.
 
