@@ -52,7 +52,7 @@
 
 **Pair asset** — The asset a Launchpad coin is priced in and raises: MON, USDC, AUSD or aBIL.
 
-**Permit2** — Uniswap's shared approval contract. Used for Uniswap v4 swaps and Moment collects.
+**Permit2** — Uniswap's shared approval contract. Used for Uniswap v4 swaps: the app approves exactly the swap's input to Permit2 and gives the Universal Router a short-lived allowance for that amount.
 
 **Perpl** — The fully on-chain perpetuals order book on Monad that powers the Perps tab.
 

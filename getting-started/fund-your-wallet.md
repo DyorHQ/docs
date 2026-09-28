@@ -4,14 +4,14 @@ DyorHQ runs on **Monad mainnet**. To do anything beyond watching, your wallet ne
 
 ## What you need
 
-| Asset    | Used for                                        | Notes                                                                                                                                             |
-| -------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MON**  | Gas on every transaction                        | Keep some at all times. When you swap 100% of your MON, DyorHQ automatically keeps about 0.02 MON back for gas.                                   |
-| **USDC** | Swaps, collecting Moments, Launchpad pair asset | Moments are priced and settled in USDC only.                                                                                                      |
-| **AUSD** | Perps collateral, Launchpad pair asset          | Perpl's collateral. First deposit is at least 10 AUSD. If you hold MON but no AUSD, the Transfer sheet can swap MON → AUSD for you on the way in. |
-| **aBIL** | Launchpad pair asset (tokenized T-bill stock)   | Coins paired with aBIL graduate on Monday Trade.                                                                                                  |
+| Asset    | Used for                                        | Notes                                                                                                                                                                                         |
+| -------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MON**  | Gas on every transaction                        | Keep some at all times. When you swap 100% of your MON, DyorHQ automatically keeps back enough MON to pay that swap's network fee, read live at the time (0.06 MON if the fee can't be read). |
+| **USDC** | Swaps, collecting Moments, Launchpad pair asset | Moments are priced and settled in USDC only.                                                                                                                                                  |
+| **AUSD** | Perps collateral, Launchpad pair asset          | Perpl's collateral. First deposit is at least 10 AUSD. If you hold MON but no AUSD, the Transfer sheet can swap MON → AUSD for you on the way in.                                             |
+| **aBIL** | Launchpad pair asset (tokenized T-bill stock)   | Coins paired with aBIL graduate on Monday Trade.                                                                                                                                              |
 
-Any other Monad token works for swapping.
+Other Monad tokens work for swapping, except coins from past Moments cohorts.
 
 ## Your receive address
 

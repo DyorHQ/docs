@@ -29,7 +29,7 @@ The footer explains it in one line: _"Your trading key is generated on this devi
 
 ## Good to know
 
-* Orders forwarded by your trading key are signed by that key, not your wallet, so they don't go through the wallet confirmation sheet and aren't gated by **Require Face ID**. The one-time "Enable one-click trading" transaction is sent directly as well.
+* Orders forwarded by your trading key are signed by that key, not your wallet, so they don't go through the wallet confirmation sheet. With **Require Face ID** on, they still ask for Face ID ("Confirm order") before they're sent. Connecting Perpl Trading and the one-time "Enable one-click trading" transaction ask for Face ID too, as do TP/SL changes and cancels.
 * Perpl allows **4 trading connections per wallet**, shared with the Perpl web app. If you hit the cap, the app tells you to close other Perpl sessions or wait a minute.
 * The connection drops while the app is in the background and reconnects the moment you return, so TP/SL orders placed from the ticket are ready without waiting.
 * If Perpl rejects the key (it can happen after a long absence), use **Remove API Key** and connect again.

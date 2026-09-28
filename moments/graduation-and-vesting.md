@@ -35,9 +35,9 @@ A "month" is 30 days from graduation. Cliffs are monthly on purpose: they give c
 ### Claiming
 
 * On the Moment page, **Your Position** shows **Claimable now**, **Claimed**, **Vested %** and a **Claim X $TICKER** button.
-* In **My Moments**, **Claim All** sweeps every vested tranche across all your graduated Moments in one transaction.
+* In **My Moments**, **Claim All** sweeps every vested tranche of your graduated Moments on the current Moments contracts in one transaction. Moments on earlier contract releases are listed under **Past Cohorts** and claimed one at a time from their own pages.
 
-Claimed coins land in your wallet and show under **Home → My Holdings → Moments** and in the Swap picker.
+Claimed coins land in your wallet. For Moments on the current contracts, they also show under **Home → My Holdings → Moments** and can be traded in Swap. Coins of Moments on earlier contract releases can't be traded in the app; their token page shows "Past cohort · trading closed".
 
 ## If the window closes first
 

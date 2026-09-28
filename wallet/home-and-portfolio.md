@@ -33,7 +33,7 @@ Six tokens per tab: **Popular** (the curated list), **Hot** (largest absolute 24
 
 ### My Holdings
 
-Tabs **Spot / Perps / Launch / Moments**. Spot rows show amount, value, price and 24h change; Perps rows show side, leverage, size and unrealized P< Launch rows show progress or phase; Moments rows show editions, coins and state. Tokens you hold that aren't on the curated list are discovered on-chain and added automatically.
+Tabs **Spot / Perps / Launch / Moments**. Spot rows show amount, value, price and 24h change; Perps rows show side, leverage, size, entry price and unrealized P\&L; Launch rows show progress or phase; Moments rows show editions, coins and state. Tokens you hold that aren't on the curated list are discovered on-chain and added automatically; the ones you didn't pick or swap into in Swap are marked **Unverified**. See [Adding Any Monad Token](../spot/adding-tokens.md).
 
 ## Portfolio
 

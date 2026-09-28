@@ -46,13 +46,14 @@ Moments is a separate product from the Launchpad, with its own contracts, supply
 
 ## States
 
-| State                  | Meaning                                                                 |
-| ---------------------- | ----------------------------------------------------------------------- |
-| **Collecting**         | Inside the window, below the threshold. Editions mint on every collect. |
-| **Graduation pending** | Threshold reached but the pool creation failed. Anyone can retry.       |
-| **Graduated**          | Pool live, collection closed, coins vesting and tradable.               |
-| **Window closed**      | Deadline passed below the threshold; anyone can call **Expire Moment**. |
-| **Expired**            | Wound down. Editions remain; no coin exists.                            |
+| State                  | Meaning                                                                                                                                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Collecting**         | Inside the window, below the threshold. Editions mint on every collect.                                                                                                                                               |
+| **Graduation pending** | Threshold reached but the pool creation failed. Anyone can retry.                                                                                                                                                     |
+| **Graduated**          | Pool live, collection closed, coins vesting and tradable.                                                                                                                                                             |
+| **Window closed**      | Deadline passed below the threshold; anyone can call **Expire Moment**.                                                                                                                                               |
+| **Expired**            | Wound down. Editions remain; no coin exists.                                                                                                                                                                          |
+| **Past cohort**        | Published on an earlier Moments contract release ("Past cohort — collecting closed"). Holders can claim vested coins and the creator can withdraw their proceeds and pool fees; everything else is closed in the app. |
 
 {% hint style="warning" %}
 **Read this before you collect.** A Moment coin is a bet on outside demand layered on a keepsake. 25% of every collect leaves to the creator and DyorHQ before any trading starts, so without new buyers the collectors as a group get back less than they paid. See [Risk Disclosures](../resources/risk-disclosures.md).

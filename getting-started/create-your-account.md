@@ -1,16 +1,16 @@
 # 👤 Create Your Account
 
-DyorHQ has no "account" in the usual sense. What you create is a **wallet on your iPhone**, and the app is built around it. Three ways in are live today.
+DyorHQ has no "account" in the usual sense. What you create is a **wallet**, and the app is built around it. These ways in are live today:
 
-| Method               | Best for                                  | Can sign transactions? | Where the key lives                                                      |
-| -------------------- | ----------------------------------------- | ---------------------- | ------------------------------------------------------------------------ |
-| **Email & Password** | New users                                 | Yes                    | Recreated from your email + password, then stored in the iPhone Keychain |
-| **Import a wallet**  | People with an existing wallet            | Yes                    | Imported into the iPhone Keychain (this device only)                     |
-| **Watch an address** | Following a wallet without controlling it | No                     | No key at all                                                            |
+| Method                                                                     | Best for                                  | Can sign transactions? | Where the key lives                                                                                                                                               |
+| -------------------------------------------------------------------------- | ----------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Email & Password**                                                       | New users                                 | Yes                    | Recreated on your iPhone from your email + password (with a step on DyorHQ's server), then stored in the iPhone Keychain                                          |
+| **Continue with Apple / Continue with Google**                             | People who'd rather not manage a password | Yes                    | A Privy embedded wallet, secured by your Apple or Google sign-in. The same sign-in opens it on any device. DyorHQ never holds the key                             |
+| **Passkey** ("Create account with a passkey" / "I already have a passkey") | Face ID sign-in with no password          | Yes                    | Derived from your passkey every time you unlock it and never stored, on this device or on a server. iCloud Keychain keeps the passkey on your other Apple devices |
+| **Import a wallet**                                                        | People with an existing wallet            | Yes                    | Imported into the iPhone Keychain (this device only)                                                                                                              |
+| **Watch an address**                                                       | Following a wallet without controlling it | No                     | No key at all                                                                                                                                                     |
 
-{% hint style="info" %}
-**Coming soon:** Sign in with Apple, Continue with Google, and Passkeys (Face ID, no password, no seed phrase). These are built but switched off until the supporting infrastructure is live. They'll appear on the "Get started" screen under "or continue with" when enabled.
-{% endhint %}
+On the "Get started" screen, **Email & Password** is the card at the top. Apple, Google and the two passkey buttons sit under "or continue with", and **Import a wallet** and **Watch an address** sit under "more ways in".
 
 <figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-30-28.png" alt=""><figcaption></figcaption></figure>
 
@@ -20,9 +20,9 @@ Tap the **Email & Password** card. The screen has a **Sign Up / Log In** switch 
 
 ### How it works
 
-Your wallet is derived deterministically from your email and password (a very slow key-stretching function runs on your phone, then a standard 24-word seed is generated from the result and the wallet's address is derived from it). This means:
+Your wallet is derived from your email and password. A very slow key-stretching function runs on your phone, and its result is combined with a value from DyorHQ's server to create the wallet's key. The server only receives one-way hashes, never your password or your key. This means:
 
-* The **same email and password always give the same wallet**, on any iPhone. DyorHQ's backend never holds the key; it only stores a link between your verified email and that wallet address, used to confirm sign-ups and to gate Log In.
+* The **same email and password always give the same wallet**, on any iPhone. DyorHQ's backend never holds the key: it links your verified email to your wallet address and supplies that server value, so logging in needs a connection to DyorHQ.
 * There is **no reset**. A different password produces a different wallet.
 * The wallet's security is exactly the strength of your password. Pick a long, unique one.
 
@@ -41,7 +41,7 @@ Once verified, your wallet is created and you're signed in. The code proves the 
 
 ### Log In
 
-Switch to **Log In**, enter the same email and password, tap **Log In**. No code is needed. Your wallet is recreated on this iPhone and, if it matches a verified sign-up, you're in.
+Switch to **Log In**, enter the same email and password, tap **Log In**. Usually no code is needed: your wallet is recreated on this iPhone and, if it matches a verified sign-up, you're in. If the app asks you to verify your email, tap **Verify Email** and enter the 6-digit code we email you; you're logged in right after. Signed up before September 24, 2026? Tap **Check for an Older Account** when it appears. The app then has you choose a new password and enter an emailed code; your account moves to the new wallet that password creates, and your earlier wallet stays at its address. If the earlier wallet still holds funds, the app first has you log in to it and send them to a wallet you control.
 
 If you see "We couldn't find a verified account for that email and password", either the password is different (which means a different wallet) or that email never completed sign-up.
 
@@ -52,6 +52,17 @@ Tap **Forgot password?** on the Log In screen, enter your email and a **new** pa
 {% hint style="danger" %}
 **Resetting your password creates a new, empty wallet.** Your email is re-linked to the new wallet, but the old wallet's funds still need the old password. If you had funds, keep trying to recall the old password, or use the old wallet's exported key if you saved one.
 {% endhint %}
+
+## Apple or Google
+
+Tap **Continue with Apple** or **Continue with Google** and finish the sign-in in the sheet that opens. Your wallet is a Privy embedded wallet secured by that sign-in, and the same sign-in opens it on any device. Key export isn't available for these wallets; see [Export, Sign Out & Delete Account](../wallet/export-sign-out-delete.md).
+
+## Passkey
+
+* **Create account with a passkey** creates a new wallet from a new passkey, confirmed with Face ID. There's no password to remember.
+* **I already have a passkey** signs in with a DyorHQ passkey you made before, whether it's on this iPhone, in iCloud Keychain or on another device.
+
+The wallet is derived from your passkey every time you unlock it and is never stored. The same passkey gives the same wallet on any device. To keep a backup that works without the passkey, export its 24-word recovery phrase (Profile → Manage Wallets → **Export Recovery Phrase**).
 
 ## Import a wallet
 
@@ -74,7 +85,7 @@ You'll see balances, positions, launches and Moments for that address. Nothing c
 
 ## Switching wallets
 
-Only one wallet is active at a time. Signing in with a new method replaces the previous one (Profile → **Sign Out** first). See [Export, Sign Out & Delete Account](../wallet/export-sign-out-delete.md) for what sign-out does to each wallet type before you switch.
+Only one wallet is active at a time. Signing in with a new method replaces the previous one (Profile → **Sign Out** first, or **Forget This Device** for a passkey account). See [Export, Sign Out & Delete Account](../wallet/export-sign-out-delete.md) for what sign-out does to each wallet type before you switch.
 
 {% hint style="warning" %}
 For **Email & Password** and **imported** wallets, signing out deletes the key from this iPhone. You'll need your password or your backup phrase/key to get back in.

@@ -34,9 +34,9 @@ When impact is above **1%**, the figure is highlighted in the attention colour. 
 
 ## Approvals and Permit2
 
-* ERC-20 inputs need an approval before the first swap on a venue. The confirmation lists each approval as its own step; approvals that already cover the amount are skipped.
-* Uniswap v4 uses **Permit2**: one unlimited approval of the token to Permit2, then a Permit2 allowance to the Universal Router that lasts 30 days. The app reuses it while it has more than two minutes left.
-* Kuru Flow, Uniswap v3 and Monday Trade get exact-amount approvals.
+* ERC-20 inputs are approved for the exact amount you're swapping, and the swap uses that approval up, so most ERC-20 swaps start with an approval step. The confirmation lists each approval as its own step. A step is skipped only when an existing allowance already covers the amount. An older unlimited allowance is replaced with an exact one, not reused.
+* Uniswap v4 uses **Permit2**. The app approves exactly the input amount to Permit2, then sets a Permit2 allowance to the Universal Router for that amount, which expires two minutes after it's set.
+* Kuru Flow, Uniswap v3 and Monday Trade get exact-amount approvals too.
 
 ## Why a quote can change
 

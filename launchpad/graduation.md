@@ -6,12 +6,14 @@ Graduation is the moment a coin leaves its bonding curve and becomes a normal to
 
 The curve tracks how much of the pair asset it has raised (net of fees). When a buy pushes that amount to the pair's threshold, the curve is complete and graduation runs **in the same transaction**. The final buy is clamped to exactly what the curve needs; any excess is refunded to the buyer.
 
-| Pair asset | Threshold      |
-| ---------- | -------------- |
-| MON        | 196,916.91 MON |
-| USDC       | 4,324.56 USDC  |
-| AUSD       | 4,324.56 AUSD  |
-| aBIL       | 47.2177 aBIL   |
+| Pair asset | Threshold                                                            |
+| ---------- | -------------------------------------------------------------------- |
+| MON        | $4,324.56 worth of MON at the price when the launchpad was deployed  |
+| USDC       | 4,324.56 USDC                                                        |
+| AUSD       | 4,324.56 AUSD                                                        |
+| aBIL       | $4,324.56 worth of aBIL at the price when the launchpad was deployed |
+
+The MON and aBIL thresholds were set from those assets' prices when the launchpad was deployed, and each coin keeps the threshold it launched with. The coin page shows it ("Graduates at X \<PAIR> raised").
 
 ## What happens at graduation
 
@@ -20,7 +22,7 @@ The curve tracks how much of the pair asset it has raised (net of fees). When a 
    * **Uniswap v4**: a full-range position in the canonical Uniswap v4 PoolManager on Monad, with the DyorHQ hook attached (that's what charges the 1% pool fee and creator tax). Locked in the DyorHQ **LaunchLocker**.
    * **Monday Trade**: a full-range position in a Monday spot pool at the 1% fee tier. Native-MON coins pair with WMON on Monday. Locked in the DyorHQ **Monday fee vault**.
 3. The position is locked. **Neither locker has a function that removes liquidity**, not for the creator, not for DyorHQ. Only earned fees can ever leave.
-4. The coin's page switches to **Graduated** and shows a **Swap TICKER on \<VENUE>** button that opens the Swap screen with the pair preselected. The **Pool fee** row there reads the pool's own LP fee, which is 0% on Uniswap v4 because the 1% is charged by the hook instead.
+4. The coin's page switches to **Graduated**, shows a **Pool fee** row (1% on either venue; on Uniswap v4 the DyorHQ hook charges it, because the pool's own LP fee is 0%) and a **Swap TICKER on \<VENUE>** button that opens the Swap screen with the pair preselected.
 
 
 
@@ -34,4 +36,4 @@ The creator picks **Uniswap v4** or **Monday Trade** at launch. aBIL-paired coin
 
 Graduated coins trade through **Swap**. Uniswap v4 quotes include graduated Launchpad pools automatically (the route text is tagged "launchpad"); Monday-graduated coins are quoted by the Monday Trade venue. The pool fee is 1% via the DyorHQ hook on Uniswap v4, or Monday's 1% tier on Monday Trade. See [Creator Fees & Holder Rewards](fees-and-rewards.md) for where those fees go.
 
-The Launchpad page still tracks a graduated coin's price (read from the Uniswap v4 pool; Monday-graduated coins show the curve's final price) and market cap, and lists it under **Graduated**.
+The Launchpad page still tracks a graduated coin's price (read live from its Uniswap v4 or Monday Trade pool, or the curve's final price if the pool can't be read) and market cap, and lists it under **Graduated**.

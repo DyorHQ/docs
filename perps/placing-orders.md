@@ -17,7 +17,7 @@
    * Market: **Max Slippage** (reveals a % field, default from Settings, 0.5% out of the box) and **TP/SL**.
    * Limit: **TP/SL**, **Post-Only**, **Reduce Only**.
 9. **Take profit** / **Stop loss** fields (USD) with expected profit / loss rows.
-10. Summary: **Liq. Price** (long and short), **Max** (available × leverage), **Fee** (≈ 0.069% of notional).
+10. Summary: **Liq. if long** and **Liq. if short** ("Unknown" when the market's maintenance margin can't be read), **Max** (available × leverage), **Fee** (≈ 0.069% of notional).
 11. **Long** / **Short** buttons.
 
 ## Market orders
@@ -30,9 +30,9 @@ Rests on Perpl's book at your price. **Post-Only** guarantees you're the maker (
 
 ## Take Profit / Stop Loss
 
-TP/SL orders are **keeper-managed triggers linked to your position** and need [One-Click Trading](one-click-trading.md). The status line under the fields tells you where you stand:
+TP/SL set on the order ticket are **keeper-managed triggers sized to this order**, and they need [One-Click Trading](one-click-trading.md). Their size is fixed when they're placed: they don't grow if you add to the position later. To protect a whole position, use **TP/SL** on the position card (see [Managing Positions](managing-positions.md)). The status line under the fields tells you where you stand:
 
-* _Placed on Perpl as keeper-managed trigger orders linked to this position._
+* _Placed on Perpl as keeper triggers that close this order's size (\<order size>). The size is fixed: they don't grow if you add to the position later._ If you already have a position on that market: _Placed on Perpl as keeper triggers that close this order's size only (\<order size>), not your whole \<position size> \<ASSET> position. For all of it, use TP/SL on the position._
 * _Connecting to Perpl trading to place your take-profit and stop-loss._
 * _Connect Perpl trading in Profile to place take-profit and stop-loss._ / _Enable one-click trading in Profile to place take-profit and stop-loss._
 * _Couldn't reach Perpl trading, retrying. Take-profit and stop-loss need it live._
@@ -45,10 +45,10 @@ If you place TP/SL without One-Click Trading, the position opens but the confirm
 
 Tap **Long** or **Short**.
 
-* **With One-Click Trading:** the **Place Order** sheet ("Review Order · Perpl") lists Market, Side, Type, Size, Leverage, Margin, Take profit, Stop loss, then _"Signed and forwarded by your Perpl API key over the trading connection."_ You'll see "Order sent to Perpl." on success. If the position opened but a trigger was rejected, the sheet says so and you can set it again from the ticket.
+* **With One-Click Trading:** the **Place Order** sheet ("Review Order · Perpl") lists Market, Side, Type, Size, Leverage, Margin, Take profit, Stop loss, then _"Signed and forwarded by your Perpl API key over the trading connection."_ You'll see "Order sent to Perpl." on success. If the order went through but Perpl didn't accept a trigger, the sheet says so and tells you to set it with **TP/SL** on the position, or for a limit order, once it fills. If Perpl didn't confirm a trigger either way, the sheet tells you to check Open Orders before placing it again.
 * **Without:** the **Review Order** sheet with Market, Side, Type, Size, Leverage and Margin rows (plus the TP/SL warning if you typed triggers), confirmed with **Long \<ASSET>** / **Short \<ASSET>** and signed as an on-chain transaction from your wallet.
 
-With **Require Face ID** on, on-chain orders prompt for Face ID before signing. Orders forwarded through One-Click Trading are signed by your trading key and don't prompt.
+With **Require Face ID** on, every order asks for Face ID first: on-chain orders before signing, and One-Click orders ("Confirm order") before they're forwarded.
 
 ## Validation messages
 

@@ -8,9 +8,9 @@ Each open position is a card:
 
 * **Long / Short N×** with P\&L in USD and as a percentage of margin
 * **Size**, **Entry**, **Mark**, **Margin**, **Liq.** (liquidation price) and **Notional**
-* Two buttons: **Add Margin** and **Close**
+* Three buttons: **Add Margin**, **TP/SL** and **Close**. **TP/SL** sets, moves or removes the position's take-profit and stop-loss, and needs [One-Click Trading](one-click-trading.md). The triggers close the position's size at the moment you set them. When a position has triggers, the card also shows a "TP … · SL …" line.
 
-Liquidation price = entry ± (maintenance requirement − margin − premium) ÷ size. Perpl's default fractions where the contract doesn't specify otherwise are 10% initial and 5% maintenance.
+Liquidation price = entry ± (maintenance requirement − margin − premium) ÷ size. The app reads each market's initial and maintenance margin fractions from Perpl's exchange contract, and they differ by market. If they can't be read, the liquidation price shows "Unknown", leverage is limited to 1×, and a stop-loss can't be set until they load.
 
 ### Close a position
 
@@ -29,7 +29,7 @@ Tap **Add Margin**: enter an amount (25% / 50% / Max shortcuts). The **After** s
 
 Resting orders appear as cards: **Buy / Sell**, **Limit** or **Limit · reduce-only**, Price, Size, Leverage, Distance from mark, and a **Cancel** button (confirmed in a **Cancel Order** sheet).
 
-TP/SL triggers show as **Take Profit** / **Stop Loss** "on Long / Short" cards. Live triggers stream from your Perpl trading connection and are marked **Keeper trigger**; the app also keeps a local copy marked **Pending…** for a few seconds after placement and while the connection is down, cleaned up once the position or order they belong to is gone.
+TP/SL triggers show as **Take Profit** / **Stop Loss** "on Long / Short" cards. A trigger that Perpl confirms is live has a **Cancel** button, and you confirm the cancel in a sheet. A new trigger reads **Pending…** for a few seconds until Perpl lists it. While Perpl trading is offline, a banner says TP/SL can't be verified, and rows read "Last seen on Perpl" or "Saved on this device · unverified". TP/SL left with no position to close get their own banner with a **Cancel** button.
 
 ## Assets
 
@@ -37,7 +37,7 @@ Total balance, In use (margin), Available and Unrealized for your Perpl account.
 
 ## Trade History
 
-Your last 50 fills on the selected market with Price, Size, Value, Fee and P\&L. Needs Perpl Trading connected (see [One-Click Trading](one-click-trading.md)); otherwise it reads _"Connect Perpl trading in Profile to see your history."_
+Your fills on the selected market with Price, Size, Value, Fee and P\&L: up to 50, taken from your latest 100 fills across all markets. Needs Perpl Trading connected (see [One-Click Trading](one-click-trading.md)); otherwise it reads _"Connect Perpl trading in Profile to see your history."_
 
 ## Perps Portfolio
 
@@ -51,8 +51,8 @@ Also needs Perpl Trading connected for the history part.
 
 ## Notifications
 
-When a position's size grows between refreshes (a fill landed), the app posts an **Order filled** notification. On-chain orders post a "Long/Short \<MARKET>" notification; One-Click orders post **Order placed** (limit) or **Order filled** (market). The master **Enable Notifications** switch controls all of these; **Swaps & Fills** additionally gates the swap and One-Click order notifications.
+While the Perps screen is open, the app posts an **Order filled** notification when a position's size grows between refreshes (a fill landed). Fills aren't noticed while the Perps screen is closed, so don't rely on this to protect a position: set a stop-loss. On-chain orders post a "Long/Short \<MARKET>" notification; One-Click orders post **Order placed** (limit) or **Order filled** (market). The master **Enable Notifications** switch controls all of these; **Swaps & Fills** additionally gates the swap and One-Click order notifications.
 
 ## Watch-only
 
-Watching an address shows its positions and orders read-only. Long/Short and every action button are disabled with "Sign in to trade."
+Watching an address shows its positions and orders read-only. **Long** and **Short** are disabled with "Sign in to trade." The Add Margin, TP/SL, Close and Cancel sheets still open, but they can't be confirmed and say "You are watching this address. Sign in to trade."

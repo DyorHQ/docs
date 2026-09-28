@@ -40,17 +40,17 @@ The app ships with Monad's official token list (mainnet v2.48). These appear in 
 | ezETH  | Renzo Restaked ETH                      | `0x2416092f143378750bb29b79eD961ab195CcEea5` |
 | rETH   | Rocket Pool ETH                         | `0xC50f2e735eDd9dCD8Ccd41EcFE9894E679e3195f` |
 
-**Any other ERC-20 on Monad** can be added by pasting its contract address in the Swap picker. See [Adding Any Monad Token](../spot/adding-tokens.md). Tokens you launch, buy on the Launchpad, or receive from a graduated Moment are added to your wallet's list automatically.
+**Any other ERC-20 on Monad** can be added by pasting its contract address in the Swap picker. See [Adding Any Monad Token](../spot/adding-tokens.md). Tokens you pick or swap into in Swap are remembered for your wallet. Other tokens the app finds in your wallet, including coins bought on the Launchpad or claimed from a Moment, show in your holdings marked **Unverified**.
 
 ## Assets by product
 
-| Product               | Asset                                                    |
-| --------------------- | -------------------------------------------------------- |
-| Swap                  | Any Monad token; MON ↔ WMON wraps 1:1                    |
-| Perps                 | Collateral: AUSD. Markets: BTC, MON, ETH, SOL, HYPE, ZEC |
-| Launchpad pair assets | MON, USDC, AUSD, aBIL                                    |
-| Moments               | USDC only (collecting, reserve, trading pair)            |
+| Product               | Asset                                                                                                      |
+| --------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Swap                  | Any Monad token except coins from past Moments cohorts (trading is closed for those); MON ↔ WMON wraps 1:1 |
+| Perps                 | Collateral: AUSD. Markets: BTC, MON, ETH, SOL, HYPE, ZEC, LIT, VVV, TAO, PUMP                              |
+| Launchpad pair assets | MON, USDC, AUSD, aBIL                                                                                      |
+| Moments               | USDC only (collecting, reserve, trading pair)                                                              |
 
 ## Prices
 
-Spot prices in the app are read from the deepest on-chain pool for each token (Kuru, Uniswap v4, Uniswap v3, Monday Trade or nad.fun), quoted in USDC, AUSD or WMON and converted to USD, and the 24h change compares against the same pool one day of blocks earlier. USDC and AUSD are pinned to $1. Perps prices come from Perpl's exchange contract and market-data feed.
+Spot prices in the app are read on-chain from the deepest Uniswap v3 or Monday Trade pool for each token (against USDC, AUSD or WMON), or from its nad.fun pair; MON and WMON are priced from the Uniswap v4 MON/USDC pool. Prices are converted to USD, and the 24h change compares against the same pool one day of blocks earlier. USDC and AUSD are pinned to $1. Perps prices come from Perpl's exchange contract and market-data feed.

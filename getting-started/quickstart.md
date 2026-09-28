@@ -18,9 +18,11 @@ This is the fastest path from zero to your first trade on DyorHQ. It takes about
 
 ## Step 2: Create your account
 
-Tap **Get Started**. You land on the "Get started" screen with three ways in:
+Tap **Get Started**. The "Get started" screen offers the **Email & Password** card at the top; **Continue with Apple**, **Continue with Google**, **Create account with a passkey** and **I already have a passkey** under "or continue with"; and **Import a wallet** and **Watch an address** under "more ways in":
 
 * **Email & Password** (recommended for new users). Tap the big card, choose **Sign Up**, enter your email and a strong password, and confirm the 6-digit code we email you. Your wallet is created on your iPhone the moment you verify.
+* **Apple or Google.** A wallet secured by your Apple or Google sign-in. The same sign-in opens it on any device.
+* **Passkey.** Face ID, no password. Your wallet is derived from your passkey each time you unlock it.
 * **Import a wallet.** Bring an existing wallet with its 12 or 24 word recovery phrase or a private key.
 * **Watch an address.** Follow any Monad wallet, read-only. Nothing can be signed.
 
@@ -65,5 +67,5 @@ You'll get a "Swap complete" notification (if notifications are on) and the swap
 * **Menu (☰ on Home):** Portfolio, News, Get Help and your Profile.
 
 {% hint style="success" %}
-**Tip:** Turn on **Require Face ID** in Profile → Security to add a biometric check before every transaction is signed.
+**Tip:** Keep **Require Face ID** on (Profile → Security). It's on by default for a new install on an iPhone with a passcode, and it asks for Face ID before every transaction is signed. If you updated from an earlier version, check that it's on.
 {% endhint %}

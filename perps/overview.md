@@ -16,6 +16,10 @@ DyorHQ trades perpetual futures on **Perpl Trade**, the fully on-chain perpetual
 | SOL-PERP  | Solana      |
 | HYPE-PERP | Hyperliquid |
 | ZEC-PERP  | Zcash       |
+| LIT-PERP  | Lighter     |
+| VVV-PERP  | Venice      |
+| TAO-PERP  | Bittensor   |
+| PUMP-PERP | Pump.fun    |
 
 Tap the market name at the top to open **Select Perpetual**, with search, mark price and 24h change per market. BTC is selected when you first open the tab.
 

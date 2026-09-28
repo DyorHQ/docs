@@ -10,7 +10,7 @@ Tap any coin on the Launch tab to open its page. While the coin is **Bonding**, 
 * **Trade on the Curve** ticket (see below).
 * **Your Holdings** (if you hold any): Balance, Pending rewards, Claim Rewards.
 * **Creator Fees**: fee mode, creator tax, fee recipient, and claim buttons for the creator.
-* **Recent Trades**: the last 25 buys and sells with trader, amount and age. Tap one to open it on Monadscan.
+* **Recent Trades**: up to 25 of the last day's curve buys and sells, with trader, amount and age (the section is hidden when there were none). Tap one to open it on Monadscan.
 * **About**: description, token and creator addresses, creator tax, fee-sharing flag, graduation venue and links.
 
 ## Buy
@@ -39,11 +39,11 @@ The curve is a constant-product curve with a virtual reserve, like most launchpa
 
 ## Fees on the curve
 
-| Fee                 | Buy                                             | Sell           |
-| ------------------- | ----------------------------------------------- | -------------- |
-| Curve fee 1%        | Off the input                                   | Off the output |
-| Creator tax (0–10%) | Off the input                                   | Off the output |
-| Early-buy tax       | Seconds 0–3 after launch: 98% / 25% / 3% / 0.3% | None           |
+| Fee                 | Buy                                                                    | Sell           |
+| ------------------- | ---------------------------------------------------------------------- | -------------- |
+| Curve fee 1%        | Off the input                                                          | Off the output |
+| Creator tax (0–10%) | Off the input                                                          | Off the output |
+| Early-buy tax       | Seconds 0–3 after launch: 98% (less the creator tax) / 25% / 3% / 0.3% | None           |
 
 The creator, the deployer and the developer buy never pay the early-buy tax. Half of the curve fee and early-buy tax goes to DyorHQ; the other half plus the creator tax goes to the creator, or into the holder-reward pool when fee sharing is on.
 

@@ -11,28 +11,28 @@ The DyorHQ side is always 50% of the curve fee and early-buy tax; the creator si
 
 ## Where fees come from
 
-| Source                     | Rate                                 | Phase                                                                                                                                  |
-| -------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Curve trade fee            | 1%                                   | Bonding                                                                                                                                |
-| Early-buy tax              | 98% / 25% / 3% / 0.3% in seconds 0–3 | Bonding                                                                                                                                |
-| Creator tax                | 0–10%                                | Bonding, and on Uniswap v4 pool swaps after graduation                                                                                 |
-| Pool fee (Uniswap v4 hook) | 1%                                   | After graduation on Uniswap v4                                                                                                         |
-| Pool fee (Monday Trade)    | Monday's 1% tier                     | After graduation on Monday Trade: earned by the locked position and harvested by DyorHQ, **not** distributed to the creator or holders |
+| Source                     | Rate                                                        | Phase                                                                                                                                  |
+| -------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Curve trade fee            | 1%                                                          | Bonding                                                                                                                                |
+| Early-buy tax              | 98% (less the creator tax) / 25% / 3% / 0.3% in seconds 0–3 | Bonding                                                                                                                                |
+| Creator tax                | 0–10%                                                       | Bonding, and on Uniswap v4 pool swaps after graduation                                                                                 |
+| Pool fee (Uniswap v4 hook) | 1%                                                          | After graduation on Uniswap v4                                                                                                         |
+| Pool fee (Monday Trade)    | Monday's 1% tier                                            | After graduation on Monday Trade: earned by the locked position and harvested by DyorHQ, **not** distributed to the creator or holders |
 
 ## Holder rewards (fee-sharing coins)
 
 If you hold a fee-sharing coin, your share of its fees accrues in the pair asset.
 
 * On the coin's page, **Your Holdings** shows **Pending rewards** and a **Claim Rewards** button. A **Queued for holders** line shows rewards that are one block away from being claimable. \
-  In **My Launchpad → Claimable Fees**, every fee-sharing coin you hold has a "TICKER rewards" row with a **Claim** button, plus **Claim All** when there's more than one thing to claim.
+  In **My Launchpad → Claimable Fees**, every fee-sharing coin with rewards ready to claim has a "TICKER rewards" row with a **Claim** button, plus **Claim All** when there's more than one thing to claim.
 * Rewards are settled to your balance before every transfer, so buying or selling never loses you what you've already earned.
 
 ## Creator fees (to-creator coins)
 
-If you launched a coin with fee sharing **off**, your fees are **paid straight to your wallet on every trade**. The fee escrow only comes into play if a payment can't be delivered; that amount is then booked as claimable:
+If you launched a coin with fee sharing **off**, your curve fees are **paid straight to your wallet on every trade**. After a Uniswap v4 graduation, your share of the pool fee and the creator tax collect in the DyorHQ hook and reach your wallet when the pool's fees are swept, which anyone can trigger. The fee escrow only comes into play if a payment can't be delivered; that amount is then booked as claimable:
 
 * On the coin's page, **Creator Fees** shows **Your claimable fees** and **Claim Creator Fees** (or "Nothing to claim yet, fees accrue as people trade your coin."). In the normal case this stays at zero because the fees already reached your wallet.
-* One claim sweeps undelivered fees across **all your launches paired in that asset**. In **My Launchpad → Claimable Fees** you'll see one "Creator fees · \<PAIR>" row per pair asset.
+* One claim sweeps undelivered fees across **all your launches paired in that asset** on the same launchpad. In **My Launchpad → Claimable Fees** you'll see one "Creator fees · \<PAIR>" row per pair asset and launchpad.
 
 ## Fee recipient changes
 
