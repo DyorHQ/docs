@@ -32,7 +32,7 @@ With Email & Password, **your password is your wallet**. DyorHQ can't reset it o
 
 Full details, password rules and the differences between each method are in [Create Your Account](create-your-account.md).
 
-<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-23_12-30-28.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/device-mockup_1.5x_postspark_2026-09-28_20-38-09.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Get your address and fund it
 

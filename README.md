@@ -10,7 +10,7 @@ description: >-
 
 ## What DyorHQ is
 
-DyorHQ is a native iOS app that talks to Monad mainnet directly. DyorHQ never holds your keys or your funds, and every transaction is shown to you in full before it's sent.
+DyorHQ is a self-custodial app where you can launch memecoins, bridge assets and swap any token on Monad, trade RWAs and perps, and keep your favorite moments onchain."
 
 One account, five products:
 
