@@ -26,10 +26,11 @@ If you hold a fee-sharing coin, your share of its fees accrues in the pair asset
 * On the coin's page, **Your Holdings** shows **Pending rewards** and a **Claim Rewards** button. A **Queued for holders** line shows rewards that are one block away from being claimable. \
   In **My Launchpad → Claimable Fees**, every fee-sharing coin with rewards ready to claim has a "TICKER rewards" row with a **Claim** button, plus **Claim All** when there's more than one thing to claim.
 * Rewards are settled to your balance before every transfer, so buying or selling never loses you what you've already earned.
+* After a Uniswap v4 graduation on the current launchpad, the holders' share of a pool swap's fee and creator tax (in the pair asset) goes to fee sharing in that same swap and becomes claimable a block later; only DyorHQ's part waits in the hook until the pool's fees are swept. On previous launchpads the holders' share also waits for that sweep.
 
 ## Creator fees (to-creator coins)
 
-If you launched a coin with fee sharing **off**, your curve fees are **paid straight to your wallet on every trade**. After a Uniswap v4 graduation, your share of the pool fee and the creator tax collect in the DyorHQ hook and reach your wallet when the pool's fees are swept, which anyone can trigger. The fee escrow only comes into play if a payment can't be delivered; that amount is then booked as claimable:
+If you launched a coin with fee sharing **off**, your curve fees are **paid straight to your wallet on every trade**. After a Uniswap v4 graduation, your share of the pool fee and the creator tax collect in the DyorHQ hook and reach your wallet when the pool's fees are swept, which anyone can trigger; the coin's page shows what's **Waiting for a sweep**. After a Monday Trade graduation there's nothing more to collect: the pool's 1% fee goes to DyorHQ. The fee escrow only comes into play if a payment can't be delivered; that amount is then booked as claimable:
 
 * On the coin's page, **Creator Fees** shows **Your claimable fees** and **Claim Creator Fees** (or "Nothing to claim yet, fees accrue as people trade your coin."). In the normal case this stays at zero because the fees already reached your wallet.
 * One claim sweeps undelivered fees across **all your launches paired in that asset** on the same launchpad. In **My Launchpad → Claimable Fees** you'll see one "Creator fees · \<PAIR>" row per pair asset and launchpad.

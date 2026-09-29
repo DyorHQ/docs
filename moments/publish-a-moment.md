@@ -32,7 +32,11 @@ Once valid, a summary shows: Collect price · Graduates at ($771.428571 reserve 
 
 ## Review and publish
 
-Tap **Review**. The **Publish TICKER** sheet lists the Moment, collect price, graduation terms, your coins, window and how the media is recorded: "photo, fingerprinted · IPFS", "video, fingerprinted · IPFS", "photo, fingerprinted · DyorHQ link, not IPFS" (when IPFS pinning failed and you chose DyorHQ's link) or "link, hashed". Tap **Publish**. It's a single transaction; when it confirms your new Moment page opens.
+Tap **Review**. The **Publish TICKER** sheet lists the Moment, collect price, graduation terms, your coins and window, then every term your Moment will be published under: **Each collect** (you · DyorHQ · reserve), **Minimum price**, **Most you can keep**, **NFT royalty**, **If it expires**, the **Platform wallet** and **Treasury wallet** (see [Contracts & Addresses](../resources/contracts-and-addresses.md)) and the **Link** its NFT will carry (`dyorhq.fun/moments/c4/<id>`). Last comes how the media is recorded: "photo, fingerprinted · IPFS", "video, fingerprinted · IPFS", "photo, fingerprinted · DyorHQ link, not IPFS" (when IPFS pinning failed and you chose DyorHQ's link) or "link, hashed". Tap **Publish**. It's a single transaction; when it confirms your new Moment page opens.
+
+The terms you review are the terms you get. The transaction carries a fingerprint (hash) of the terms on the sheet, and the Moments contract refuses the publish if its terms changed in the meantime: nothing is published and you review the new terms and publish again. If a change of terms is queued, the form shows what would change and the sheet adds a **Policy change** row.
+
+Publish is unavailable while publishing is paused, or if the app can't verify the contract's terms; the form says which.
 
 ## Choosing your settings
 

@@ -42,7 +42,8 @@ Moments is a separate product from the Launchpad, with its own contracts, supply
 * Filter: **All**, **Collecting** (still inside the window), **Graduated**.
 * Each card: the media, a state badge (countdown like "2d 3h", "Window closed", "Graduation pending", "Graduated" or "Expired"), name and $TICKER, **Per edition** price (or **FDV** once graduated), **Editions** count and a "N% to graduation" bar.
 * Toolbar: **My Moments** and **Publish**. Polls every 20 seconds.
-* If governance has paused publishing, the header says _"Publishing is paused by governance; collecting continues."_ and Publish is disabled.
+* If publishing is paused, the header says so (_"Publishing is paused by governance; collecting continues."_, or _"…by the Moments guardian…"_) and Publish is disabled. Governance is a DyorHQ Safe multisig (2-of-3); the guardian can pause and unpause publishing, cancel a queued change of terms and hand its role on; it can't move funds or change a published Moment.
+* If new terms for new Moments are queued, the header warns you: if they take effect before your publish confirms, nothing is published and you review them again. Moments already published never change.
 
 ## States
 

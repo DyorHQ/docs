@@ -34,6 +34,8 @@
 
 **Graduation** — The moment a Launchpad coin or a Moment coin leaves its curve or collect phase and gets a locked liquidity pool.
 
+**Graduation pending** — A Launchpad coin whose curve is full, or a Moment whose reserve reached its threshold, but whose pool hasn't been created yet. Nothing trades until it graduates; anyone can retry it.
+
 **Hook** — A Uniswap v4 contract attached to a pool. DyorHQ's hooks charge the Launchpad pool fee and the Moments 1% fee.
 
 **Isolated margin** — Each perps position has its own margin; a loss on one can't drain another. Perpl only offers this.
@@ -52,6 +54,8 @@
 
 **Pair asset** — The asset a Launchpad coin is priced in and raises: MON, USDC, AUSD or aBIL.
 
+**Past cohort** — A Moment published on an earlier DyorHQ Moments contract release. Claim-only in the app: holders claim vested coins and creators withdraw their own proceeds and pool fees; collecting and trading are closed.
+
 **Permit2** — Uniswap's shared approval contract. Used for Uniswap v4 swaps: the app approves exactly the swap's input to Permit2 and gives the Universal Router a short-lived allowance for that amount.
 
 **Perpl** — The fully on-chain perpetuals order book on Monad that powers the Perps tab.
@@ -66,7 +70,11 @@
 
 **Reserve** — 75% of every Moment collect, held until graduation seeds the pool (or expiry splits it).
 
+**Retired launchpad** — A previous DyorHQ launchpad release. Its coins keep their pages in the app; those still on a curve can be sold but not bought, and graduated ones trade on Swap.
+
 **Slippage tolerance** — The maximum the price may move against you before a swap or market order cancels.
+
+**Terms hash** — A fingerprint of the terms you reviewed, carried by a launch or a Moment publish. The contract refuses the transaction if its terms changed in the meantime.
 
 **Threshold** — The amount a curve or reserve must raise to graduate.
 

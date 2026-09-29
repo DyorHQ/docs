@@ -22,7 +22,7 @@ Other tokens the app finds in your wallet's history are marked **Unverified**, i
 
 * **Graduated Launchpad coins** trade through the pool their curve migrated into (Uniswap v4 or Monday Trade). The **Swap SYM on …** button on the coin's page opens Swap with the pair preselected.
 * **Graduated Moment coins** from the current Moments release trade on Uniswap v4 against USDC at a 1.5% all-in fee. The **Trade $SYM** button on the Moment page opens Swap with USDC → coin. Coins from an earlier Moments release (a past cohort) can't be traded in the app: their token detail page shows "Past cohort · trading closed", and their Moment page reads "Past cohort — collecting closed", where holders can still claim their vested coins.
-* Coins **still on their curve** are bought and sold on the Launch tab, not in Swap.
+* Coins **still on their curve** are bought and sold on their Launch page, not in Swap; a coin's token page and your Portfolio holdings send you there. Coins still on a previous DyorHQ launchpad's curve can only be sold.
 
 ## A word of caution
 

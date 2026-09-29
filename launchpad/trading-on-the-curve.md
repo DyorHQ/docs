@@ -2,6 +2,8 @@
 
 Tap any coin on the Launch tab to open its page. While the coin is **Bonding**, you buy and sell directly on its curve here (not in Swap).
 
+Swap can't route a coin that's still on its curve. When you open one from Home (a token's page), Portfolio or Swap, the app points you to its Launch page instead, with a button such as **Trade TICKER on its Launch page** (or **Sell TICKER on its Launch page**). If the coin's launch can't be read just now, it offers **Find TICKER on the Launch tab**.
+
 ## The coin page
 
 * **Header**: logo, name, phase, price in the pair asset (and USD), market cap, and a **Graduation** gauge with _"Graduates at X \<PAIR> raised. Liquidity then moves to a locked \<VENUE> pool."_
@@ -32,6 +34,15 @@ The buy that reaches the threshold **completes the curve and graduates the coin 
 2. Enter a number of coins.
 3. The quote shows **You receive** in the pair asset, **Curve fee** (1% of the output) and **Creator tax** if the creator set one. There's no early-buy tax on sells.
 4. Tap **Sell $TICKER**. Steps: "Approve $TICKER" then the sell.
+
+## Sell-only coins
+
+Some coins can be sold on their curve but not bought. Their ticket is titled **Sell on the Curve** and has no Buy side:
+
+* **Coins from a previous DyorHQ launchpad** (marked **Retired launchpad**): _"This coin's launchpad is retired: you can sell, but not buy."_ Curve fees and any creator tax apply, unless the coin is in refund mode.
+* **Coins in refund mode**: _"Refund mode: sell back into the curve at its price, with no fees."_
+
+A coin whose curve is full but hasn't graduated yet (**Graduation pending**) can't be traded at all until it graduates; its page shows the graduation section instead of the ticket. See [Graduation](graduation.md).
 
 ## How the price moves
 

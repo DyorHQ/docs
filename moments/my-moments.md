@@ -25,7 +25,7 @@ Empty state: _"Collect a Moment and it shows up here with its editions and coins
 
 Moments you have a stake in on earlier DyorHQ Moments contract releases are listed separately under **Past Cohorts**: _"Earlier DyorHQ Moments contracts. Collecting is closed; claim your vested coins and, as a creator, withdraw your own proceeds."_ Tap a row to open that Moment's page and claim from there.
 
-They are not counted in the tiles or in Claim All, and they don't appear under **Home → My Holdings → Moments**. They also show as a **Past Cohorts** card in Portfolio.
+They are not counted in the tiles or in Claim All, and they don't appear under **Home → My Holdings → Moments**. They also show as a **Past Cohorts** card in Portfolio. A past-cohort Moment whose collect window ended before it graduated never vests: _"Its collecting window ended before it graduated, so its coins never vest. Your editions stay yours."_
 
 ## Where else Moments show up
 
@@ -34,7 +34,7 @@ They are not counted in the tiles or in Claim All, and they don't appear under *
 * **Portfolio → My Holdings → NFTs**: your editions as "Moment · OpenSea" tiles.
 * **Portfolio → Moments**: volume, fees and activity ("Collected …", "Published …", "Withdrew proceeds", "Withdrew pool fees").
 * **OpenSea**: every edition, at `opensea.io/item/monad/<NFT contract>/<edition>`.
-* **Moment link**: the share button on a Moment page shares the Moment's own link (`dyorhq.fun/moments/<name>`), and your share sheet previews it with the Moment's name and artwork. With the DyorHQ app installed, the link opens the Moment in the app; otherwise it opens the website's Moments page.
+* **Moment link**: the share button on a Moment page shares the Moment's own link (`dyorhq.fun/moments/<name>`), and your share sheet previews it with the Moment's name and artwork. With the DyorHQ app installed, the link opens the Moment in the app; otherwise it opens the website's Moments page. Each NFT also carries a link by number, `dyorhq.fun/moments/c4/<id>` for Moments on the current contracts, which opens the same Moment; the share button uses it until the name link is ready.
 
 ## Editions on other wallets
 

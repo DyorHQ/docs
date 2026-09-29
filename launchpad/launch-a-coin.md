@@ -28,7 +28,7 @@ Once the form is valid, a live card shows your name, $TICKER, a **New** badge an
 
 * **Paired with**: MON, USDC, AUSD or aBIL. Only pairs approved on the factory are listed.
 * **Graduates on**: **Uniswap v4** (default) or **Monday Trade**. aBIL coins graduate on Monday Trade only, so the picker locks for that pair.
-* The footer tells you the live terms: _"Graduates to a locked \<VENUE> pool once the curve raises \<THRESHOLD> \<PAIR>. Launch fee 5 MON."_ (for aBIL it adds _"aBIL coins graduate on Monday Trade."_)
+* The footer tells you the live terms: _"Graduates to a locked \<VENUE> pool once the curve raises \<THRESHOLD> \<PAIR>. Launch fee 5 MON."_ For aBIL it adds that the coin graduates on Monday Trade and, if it stays stuck for a day, can move to a locked Uniswap v4 pool.
 
 ### Developer Buy (Optional)
 
@@ -36,10 +36,12 @@ Buy your own coin in the same transaction as the launch. The developer buy is **
 
 ### Advanced
 
-* **Creator tax**: 0% to the maximum (10%) in 0.25% steps. Charged on curve trades and paid to you, or to holders if fee sharing is on.
+* **Creator tax**: 0% to the maximum (10%) in 0.25% steps. Charged on curve trades and, for a Uniswap v4 graduation, on pool swaps afterwards; paid to you, or to holders if fee sharing is on. After a Monday Trade graduation the pool's 1% fee goes to DyorHQ, with no creator tax or fee share in it; the footer spells this out for the venue you picked.
 * **Share fees with holders**: on by default. When on, your share of curve fees, the creator tax and (after a Uniswap v4 graduation) pool fees are split pro-rata among holders instead of going to you.
 
 The creator's fee recipient is the launching wallet.
+
+If the launchpad can't take a launch from your wallet right now, a notice at the top of the form says why (for example _"New launches are paused right now."_) and **Review** stays off, so nothing is signed.
 
 ## Review and launch
 

@@ -29,7 +29,7 @@ A donut of Spot / Perps / Launchpad / Moments with percentages. Shown once you h
 
 ### Top Tokens
 
-Six tokens per tab: **Popular** (the curated list), **Hot** (largest absolute 24h move), **Gainers**, **Losers**. Tap one for its detail page: price, 24h chart, your balance and value, contract, decimals, **Swap SYM** and **View on Monadscan**.
+Six tokens per tab: **Popular** (the curated list), **Hot** (largest absolute 24h move), **Gainers**, **Losers**. Tap one for its detail page: price, 24h chart, your balance and value, contract, decimals, **Swap SYM** and **View on Monadscan**. On a token's detail page (it also opens from search and from your Spot holdings), a Launchpad coin still on its bonding curve gets a button to its Launch page instead of Swap (**Trade SYM on its Launch page**, or **Sell SYM on its Launch page** when it can only be sold), and a past-cohort Moment coin shows "Past cohort · trading closed".
 
 ### My Holdings
 
@@ -47,7 +47,7 @@ Everything here is computed from your wallet's own on-chain history.
 * **Fees paid**, **P\&L** (marked \* when a source is incomplete), **Claimed fees**, **Trades**.
 * **Volume by Section**: a bar and legend for Spot, Perps, Launch, Moments, Bridge.
 * One **card per section** with Volume, Fees, P\&L, Claimed (or Trades for Perps) and the trade count. Tap a card to jump to that tab. The Perps card notes _"Enable one-click trading in Profile → Perpl Trading to include your perps history."_ until you do.
-* **My Holdings**: **Assets** (top 6, "Show all") and **NFTs** (your Moment editions and other NFTs).
+* **My Holdings**: **Assets** (top 6, "Show all") and **NFTs** (your Moment editions and other NFTs). Tapping an asset opens Swap; a Launchpad coin still on its curve opens its Launch page instead (its row says "Buy or sell on its Launch page" or "Sell on its Launch page"), and a past-cohort Moment coin opens its Moment page.
 * **Activity**: every swap, perp fill, curve trade, claim, collect, publish, Moment proceeds or pool-fee withdrawal and bridge in the period, with Monadscan links. Plain wallet sends and Perpl deposits/withdrawals live in Recent Activity instead.
 
 ## Recent Activity
